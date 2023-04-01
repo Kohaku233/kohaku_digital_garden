@@ -1,3 +1,6 @@
+# Kohaku 数字花园
+
+
 # Quartz
 
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
@@ -14,6 +17,6 @@ Check out some of the [amazing gardens that community members](https://quartz.jz
 
 🔗 Get Started: https://quartz.jzhao.xyz/
 
-![Quartz Example Screenshot](./screenshot.png)*Quartz Example Screenshot*
+![Quartz Example Screenshot](./screenshot.png)_Quartz Example Screenshot_
 
 [Join the Discord Community](https://discord.gg/cRFFHYye7t)
