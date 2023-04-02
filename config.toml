@@ -1,5 +1,5 @@
 baseURL = "https://kohaku-digital-garden.vercel.app/"
-languageCode = "zh-cn"
+languageCode = "en"
 googleAnalytics = "G-11MD77L81V"
 relativeURLs = false
 disablePathToLower = true
@@ -7,8 +7,8 @@ ignoreFiles = [
   "/content/templates/*",
   "/content/private/*",
 ]
-summaryLength = 20
 paginate = 10
+summaryLength = 20
 enableGitInfo = true
 title = "Kohaku"
 
