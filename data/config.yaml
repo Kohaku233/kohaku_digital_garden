@@ -1,18 +1,31 @@
-name: Kohaku
-enableToc: true
+name: Jacky Zhao
+enableToc: false
 openToc: false
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
-enableCallouts: true
-enableSPA: false
+enableCallouts: false
+enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: true
-enableGitHubEdit: false
-GitHubLink:
-enableSemanticSearch: false
-operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
-description: 我的第二大脑 second brain，我的数字花园 digital garden，用obsidian双链笔记软件写作而成。
-page_title: "Kohaku"
+enableRecentNotes: false
+enableGitHubEdit: true
+enableMermaid: true
+GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+search:
+  enableSemanticSearch: false
+  operandApiKey: "jp9k5hudse2a828z98kxd6z3payi8u90rnje"
+  operandIndexId: "76bf623t3vjr"
+description:
+  Welcome to my little island on the internet – I’m Jacky!
+  I’m curious about how we can better incentivize public goods funding, support better interactions with computers, and be more responsible stewards of technology.
+  I spend a lot of time here cultivating and building things I find interesting.
+  This is my personal digital garden and organizing system of sorts.
+page_title:
+  "jzhao.xyz"
+links:
+  - link_name: Twitter
+    link: https://twitter.com/_jzhao
+  - link_name: GitHub
+    link: https://github.com/jackyzha0

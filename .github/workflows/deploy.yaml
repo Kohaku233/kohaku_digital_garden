@@ -21,7 +21,7 @@ jobs:
       #   run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/Kohaku Garden.md content/_index.md
 
       - name: Build Link Index
-        uses: jackyzha0/hugo-obsidian@v2.18
+        uses: jackyzha0/hugo-obsidian@v2.19
         with:
           index: true
           input: content

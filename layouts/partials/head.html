@@ -2,26 +2,6 @@
 {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
 {{ $data := index $.Site.Data $config }}
 <head>
-  {{/*  添加umami数据统计  */}}
-  <script async defer data-website-id="08a754c4-6690-46d7-bb80-8ff93cfa232f" src="https://umami.oldwinter.top/umami.js"></script>
-  
-  {{/*  添加浩克数据统计  */}}
-  <!-- Start of Howxm client code snippet -->
-  <script>
-  function _howxm(){_howxmQueue.push(arguments)}
-  window._howxmQueue=window._howxmQueue||[];
-  _howxm('setAppID','1bd4330d-3e03-4fe8-aee1-858ad1ef9879');
-  (function(){var scriptId='howxm_script';
-  if(!document.getElementById(scriptId)){
-  var e=document.createElement('script'),
-  t=document.getElementsByTagName('script')[0];
-  e.setAttribute('id',scriptId);
-  e.type='text/javascript';e.async=!0;
-  e.src='https://static.howxm.com/sdk.js';
-  t.parentNode.insertBefore(e,t)}})();
-  </script>
-  <!-- End of Howxm client code snippet -->
-  
   <!-- Meta tags -->
   <meta charset="UTF-8" />
   <meta
@@ -33,6 +13,18 @@
     end }}
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Social Tags -->
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="{{ .Scratch.Get "title" | humanize }}" />
+  <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+  <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
 
   <!-- HTML Favicon -->
   {{ $favicon := $data.favicon  | default $.Site.Data.config.favicon | default (slice (dict "rel" "shortcut icon" "type" "image/png" "href" "icon.png")) }}
@@ -70,27 +62,29 @@
   <script src="{{$s.Permalink}}"></script>
   {{end}}
   {{partial "katex.html" .}}
-    
-  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+
+  {{partial "mermaid.html" .}}
+
+  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
-  <script src="{{$popover.Permalink}}"></script>
+  <script async src="{{$popover.Permalink}}"></script>
 
   <!-- Optional scripts -->
   {{ if $data.enableCodeBlockTitle | default $.Site.Data.config.enableCallouts }}
   {{ $codeTitle := resources.Get "js/code-title.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$codeTitle.Permalink}}"></script>
+  <script defer src="{{$codeTitle.Permalink}}"></script>
   {{end}}
 
   {{ if $data.enableCodeBlockCopy | default $.Site.Data.config.enableCodeBlockCopy }}
   {{ $clipboard := resources.Get "js/clipboard.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$clipboard.Permalink}}"></script>
+  <script defer src="{{$clipboard.Permalink}}"></script>
   {{ end }}
 
   {{ if $data.enableCallouts | default $.Site.Data.config.enableCallouts }}
   {{ $callouts := resources.Get "js/callouts.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$callouts.Permalink}}"></script>
+  <script defer src="{{$callouts.Permalink}}"></script>
   {{ end }}
 
   <!--  Preload page vars  -->
@@ -99,6 +93,22 @@
   "indices/contentIndex.json" | resources.Fingerprint "md5" | resources.Minify
   }}
   <script>
+    // last visit animation calculations
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED = {{.Site.Data.config.search.enableSemanticSearch}}
+    const LATEX_ENABLED = {{.Site.Data.config.enableLatex}}
+    const PRODUCTION = {{ hugo.IsProduction }}
     const BASE_URL = {{.Site.BaseURL}}
     const fetchData = Promise.all([
           fetch("{{ $linkIndex.Permalink }}")
@@ -135,12 +145,12 @@
       {{if $data.enableCallouts | default $.Site.Data.config.enableCallouts -}}
       addCollapsibleCallouts();
       {{ end }}
-     
+
       {{if $data.enableLinkPreview | default $.Site.Data.config.enableLinkPreview}}
       initPopover(
         {{strings.TrimRight "/" .Site.BaseURL }},
-        {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}},
-        {{$data.enableLatex | default $.Site.Data.config.enableLatex}}
+        {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}}
+
       )
       {{end}}
 
@@ -163,6 +173,42 @@
 
         }
       {{end}}
+
+      {{if $data.enableMermaid | default $.Site.Data.config.enableMermaid}}
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              // init forces mermaid to render mermaid markdown without waiting
+              // for DOMContentLoaded event
+              obj.default.init();
+            }
+          )
+        }
+      {{end}}
+      
+      // analytics
+      function clickHandler(evt) {
+        const target = evt.target 
+        const classNames = target.className.split(" ")
+        const broken = classNames.includes("broken")
+        const internal = classNames.includes("internal-link")
+        plausible("Link Click", {
+          props: {
+            href: target.href,
+            broken,
+            internal,
+            graph: false,
+          }
+        })
+      }
+
+      const links = document.querySelectorAll("a")
+      for (link of links) {
+        if (link.className.includes("root-title")) {
+          link.addEventListener('click', clickHandler, {once: true})
+        }
+      }
     }
 
     const init = (doc = document) => {
@@ -180,6 +226,9 @@
           {left: '$$', right: '$$', display: true},
           {left: '$', right: '$', display: false},
         ],
+        macros: {
+          '’': "'"
+        },
         throwOnError : false
       });
       {{end}}
@@ -205,5 +254,7 @@
     })
   </script>
   {{end}}
+  {{ $trimmedURL := trim (index (split .Site.BaseURL "://") 1) "/" }}
+  <script defer data-domain="{{$trimmedURL}}" src="https://plausible.io/js/script.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
-{{ template "_internal/google_analytics.html" . }}
