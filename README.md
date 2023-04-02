@@ -1,5 +1,7 @@
 # Kohaku 数字花园搭建
 
+完成数字花园搭建，接下来修改内容
+
 # Quartz
 
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
