@@ -5,28 +5,19 @@ on:
     branches:
       - hugo
 
-  workflow_dispatch:
-
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
-        with: 
-          token: ${{ secrets.TOKEN }}  #这里是添加的token，不用设置，需要在仓库中添加TOKEN，$代表的是调用刚才添加的环境变量，所以不需要设置
-          submodules: 'true'
+        with:
+          token: ${{ secrets.TOKEN }} #这里是添加的token，不用设置，需要在仓库中添加TOKEN，$代表的是调用刚才添加的环境变量，所以不需要设置
+          submodules: "true"
       - name: Checkout submodules
         run: git submodule update --init --recursive
 
-      - name: config1 
-        run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/AboutTheGarden.md content/_index.md 
-
-      # - name: config2
-      #   run: "ls content/ && grep -lr --null 'title' content/* | xargs -0 sed -i -E -r 's/title: "(.*)/title: \"\\1\"/g'""
-
-      - name: config3 
-        run: rm -rf content/*.md-E
-
+      - name: Delete Useless Content
+        run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/AboutTheGarden.md content/_index.md
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.18
@@ -36,11 +27,10 @@ jobs:
           output: assets/indices
           root: .
 
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.96.0'
+          hugo-version: "0.96.0"
           extended: true
 
       - name: Build
@@ -51,5 +41,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: master  # deploying branch
-          cname:     #修改成你的域名
+          publish_branch: master # deploying branch
+          cname: https://kohaku-digital-garden.vercel.app/ #修改成你的域名
