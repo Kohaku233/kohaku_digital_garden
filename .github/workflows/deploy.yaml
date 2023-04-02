@@ -13,11 +13,12 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }} #这里是添加的token，不用设置，需要在仓库中添加TOKEN，$代表的是调用刚才添加的环境变量，所以不需要设置
           submodules: "true"
+          fetch-depth: 0
       - name: Checkout submodules
         run: git submodule update --init --recursive
 
-      - name: Delete Useless Content And Change Main
-        run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/Kohaku Garden.md content/_index.md
+      # - name: Delete Useless Content And Change Main
+      #   run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/Kohaku Garden.md content/_index.md
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.18
@@ -36,7 +37,7 @@ jobs:
       - name: Build
         run: hugo --minify --debug
 
-      - name: Deploy
+      - name: Deploy on GitHub
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
