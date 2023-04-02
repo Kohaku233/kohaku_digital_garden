@@ -1,4 +1,4 @@
-baseURL = "https://kohaku-digital-garden.vercel.app/"
+baseURL = ""
 languageCode = "en"
 googleAnalytics = "G-11MD77L81V"
 relativeURLs = false

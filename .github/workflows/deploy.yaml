@@ -52,4 +52,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: master  # deploying branch
-          cname: kohaku-digital-garden.vercel.app    #修改成你的域名
+          cname:     #修改成你的域名
