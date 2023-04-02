@@ -17,7 +17,7 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Delete Useless Content
-        run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/AboutTheGarden.md content/_index.md
+        run: rm -rf content/.obsidian content/cedict_ts.u8 content/Extras/Templates  && mv content/*.md content/Atlas && find content/ -name "*.md" | xargs -I file  mv -f file content &&  mv content/Kohaku Garden.md content/_index.md
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.18
