@@ -6,6 +6,8 @@ disablePathToLower = true
 ignoreFiles = [
   "/content/templates/*",
   "/content/private/*",
+  "/content/.github/*",
+  "/content/.obsidian/*",
 ]
 paginate = 10
 summaryLength = 20
