@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/Kohaku233/digital_obsidian.git
