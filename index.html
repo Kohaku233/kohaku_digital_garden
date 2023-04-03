@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.ac6ac23882f646211f818d464b9a5648.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.a92f3296c7b0274a14c08d4f34741457.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.60b7128f2a53fab57430a321e2f978e7.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.a478642247984c96e4d1668962ffc6b5.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -356,7 +356,7 @@
 <li>不会算法题的程序员</li>
 <li>……</li>
 </ul>
-<p>你可能想知道如何搭建这样一套本地笔记同步到花园，这里有搭建教程
+<p>你可能想知道如何搭建这样一套本地笔记同步到花园，这里有搭建
 
 
 
@@ -365,7 +365,7 @@
 <a
   
   rel="noopener" class="internal-link broken"
-  data-src="%e6%b3%a8%e6%84%8f%ef%bc%9a%e8%bf%99%e5%a5%97%e6%95%99%e7%a8%8b%e4%bb%85%e9%92%88%e5%af%b9%e6%9c%89%e4%b8%80%e5%ae%9a%e7%bc%96%e7%a8%8b%e8%83%bd%e5%8a%9b%e7%9a%84%e4%ba%ba%ef%bc%8c%e6%b6%89%e5%8f%8a%e5%88%b0%e7%bb%86%e8%8a%82%e9%83%a8%e5%88%86%e9%9c%80%e8%a6%81%e8%87%aa%e5%b7%b1%e6%91%b8%e7%b4%a2">[obsidian本地内容同步到数字花园]</a></p>
+  data-src="%e6%b3%a8%e6%84%8f%ef%bc%9a%e8%bf%99%e5%a5%97%e6%95%99%e7%a8%8b%e4%bb%85%e9%92%88%e5%af%b9%e6%9c%89%e4%b8%80%e5%ae%9a%e7%bc%96%e7%a8%8b%e8%83%bd%e5%8a%9b%e7%9a%84%e4%ba%ba%ef%bc%8c%e6%b6%89%e5%8f%8a%e5%88%b0%e7%bb%86%e8%8a%82%e9%83%a8%e5%88%86%e9%9c%80%e8%a6%81%e8%87%aa%e5%b7%b1%e6%91%b8%e7%b4%a2">[教程/obsidian本地内容同步到数字花园 | 教程]</a></p>
 
 
       
