@@ -1,5 +1,5 @@
 baseURL = "https://www.kohaku.ink/"
-languageCode = "zh-Cn"
+languageCode = "zh-cn"
 lang = "zh-cn"
 relativeURLs = false
 disablePathToLower = true
