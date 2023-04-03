@@ -137,7 +137,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.7d4b30c48e781376656245f00504a057.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.4fb6c249db66f4eacfbddeddb5045997.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -157,7 +157,6 @@
       addCopyButtons();
       
 
-      addTitleToCodeBlocks();
       
 
       
@@ -247,10 +246,16 @@
     };
   </script>
   
-  
-  <script type="module">
-    import { attachSPARouting } from "https:\/\/kohaku-digital-garden.vercel.app\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
-    attachSPARouting(init, render)
+  <script>
+    window.Million = {
+      navigate: (url) => (window.location.href = url),
+      prefetch: () => {},
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      init()
+      render()
+    })
   </script>
   
   
@@ -287,7 +292,7 @@
 <div class="singlePage">
     
     <header class="delay t-3">
-    <h1 id="page-title"><a class="root-title" href="https://kohaku-digital-garden.vercel.app/">Kohaku</a></h1>
+    <h1 id="page-title"><a class="root-title" href="https://kohaku-digital-garden.vercel.app/">Kohaku 个人笔记整理</a></h1>
     <div class="spacer"></div>
     <div id="search-icon">
       <p>搜索</p>

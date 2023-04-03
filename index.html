@@ -9,7 +9,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Welcome to Kohaku&#39;s digital garden!"
+    content="Kohaku 数字花园!"
   />
   <title>
     Kohaku
@@ -138,7 +138,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.7d4b30c48e781376656245f00504a057.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.4fb6c249db66f4eacfbddeddb5045997.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -158,7 +158,6 @@
       addCopyButtons();
       
 
-      addTitleToCodeBlocks();
       
 
       
@@ -248,10 +247,16 @@
     };
   </script>
   
-  
-  <script type="module">
-    import { attachSPARouting } from "https:\/\/kohaku-digital-garden.vercel.app\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
-    attachSPARouting(init, render)
+  <script>
+    window.Million = {
+      navigate: (url) => (window.location.href = url),
+      prefetch: () => {},
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      init()
+      render()
+    })
   </script>
   
   
@@ -287,7 +292,7 @@
 
   <div id="index" class="singlePage">
     <header class="delay t-3">
-    <h1 id="page-title"><a class="root-title" href="https://kohaku-digital-garden.vercel.app/">Kohaku</a></h1>
+    <h1 id="page-title"><a class="root-title" href="https://kohaku-digital-garden.vercel.app/">Kohaku 个人笔记整理</a></h1>
     <div class="spacer"></div>
     <div id="search-icon">
       <p>搜索</p>
@@ -313,26 +318,127 @@
 
 
     <img id="banner" src="/banner.svg" />
-    <div class="bio">
-      <div class="writing-sidebar">
-        <div class="delay t-3">
-          <h2>Recent Writing</h2>
-          
-          <ul class="delay stagger">
-            
-          </ul>
-          <a href="/posts">See -3 more →</a>
+    <article>
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Kohaku <a href="/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD" rel="noopener" class="internal-link" data-src="/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD">数字花园</a>
+球球你，让我搭建成功吧</p>
+
+
+      
+      <div class="content-list">
+  <h2>近期笔记</h2>
+  
+  
+  <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 3, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://kohaku-digital-garden.vercel.app/frontend/deploy/" class="internal-link" data-src="/frontend/deploy/">deploy</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
         </div>
-        <div class="delay t-4">
-          <h2>Recent Notes</h2>
-          
-          <ul class="delay stagger">
-            
-          </ul>
-          <a href="/thoughts">See -2 more →</a>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 3, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://kohaku-digital-garden.vercel.app/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">数字花园</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
         </div>
-      </div>
-    </div>
+    </li></ul>
+
+</div>
+
+
+      
+    </article>
     <div class="delay t-4">
       <hr/>
 
