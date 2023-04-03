@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kohaku-digital-garden.vercel.app/frontend/deploy/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kohaku-digital-garden.vercel.app/frontend/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kohaku-digital-garden.vercel.app/</loc>
+    <lastmod>2022-08-29T14:23:04-04:00</lastmod>
+  </url><url>
+    <loc>https://kohaku-digital-garden.vercel.app/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kohaku-digital-garden.vercel.app/categories/</loc>
+  </url><url>
+    <loc>https://kohaku-digital-garden.vercel.app/tags/</loc>
+  </url>
+</urlset>

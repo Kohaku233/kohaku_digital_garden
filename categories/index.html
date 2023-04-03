@@ -11,7 +11,7 @@
     content=""
   />
   <title>
-    404 Page not found
+    Categories
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -263,7 +263,39 @@
 
 
 <body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://kohaku-digital-garden.vercel.app/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
 <div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a class="root-title" href="https://kohaku-digital-garden.vercel.app/">Kohaku</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
     <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
@@ -280,11 +312,32 @@
     </label>
 </div>
 
-    <div class="centered">
-        <h1>404</h1>
-        <h3>Hey traveler! You look a little lost. This page doesn't seem to exist.</h3>
-        <a href="https://kohaku-digital-garden.vercel.app/">↳ Let's get you home.</a>
-    </div>
+</header>
+
+
+    <article>
+        <h1>All Categories</h1>
+        
+        <div class="tags">
+            
+        </div>
+    </article>
+    
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p></p>
+        <ul>
+            
+            <li><a href="https://kohaku-digital-garden.vercel.app/">Home</a></li>
+            </ul>
+    </footer>
+</div>
+
 </div>
 </body>
 </html>
