@@ -6,16 +6,17 @@ enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: false
-enableSPA: true
+enableSPA: false
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: false
+enableRecentNotes: true
 enableGitHubEdit: false
 enableMermaid: true
-# GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+description:
+  我的第二大脑 second brain，我的数字花园 digital garden，用obsidian双链笔记软件写作而成。
 search:
   enableSemanticSearch: false
-  operandApiKey: "jp9k5hudse2a828z98kxd6z3payi8u90rnje"
-  operandIndexId: "76bf623t3vjr"
-description: Welcome to Kohaku's digital garden!
-page_title: "Kohaku"
+  # operandApiKey: "jp9k5hudse2a828z98kxd6z3payi8u90rnje"
+  # operandIndexId: "76bf623t3vjr"
+description: Kohaku 数字花园!
+page_title: "Kohaku 个人笔记整理"
