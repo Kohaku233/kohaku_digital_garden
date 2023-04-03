@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://kohaku-digital-garden.vercel.app/"
     const fetchData = Promise.all([
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/linkIndex.f4dd87c693a48f6eae638e274223682e.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/linkIndex.642fb32333f1eabb518d3235dcf1c905.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.31c1ca7d6c932e37a518c5afab60c9aa.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.c429234545352acba13476a86862e57b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

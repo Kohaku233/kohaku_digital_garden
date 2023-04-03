@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://kohaku-digital-garden.vercel.app/"
     const fetchData = Promise.all([
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/linkIndex.f4dd87c693a48f6eae638e274223682e.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/linkIndex.642fb32333f1eabb518d3235dcf1c905.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.31c1ca7d6c932e37a518c5afab60c9aa.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.c429234545352acba13476a86862e57b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,6 +319,18 @@
     <article>
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#关于我">关于我</a></li>
+    <li><a href="#技能点">技能点</a></li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -335,48 +347,6 @@
 
 
 
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
 
 
 
@@ -388,9 +358,16 @@
 
 
 
-
-<p>Kohaku <a href="/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD" rel="noopener" class="internal-link" data-src="/%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD">数字花园</a>
-球球你，让我搭建成功吧</p>
+<a href="#关于我"><h2 id="关于我"><span class="hanchor" ariaLabel="Anchor"># </span>关于我</h2></a>
+<p>我是 Kohaku，一名软件开发工程师。目前主要在做前端开发，会一点后端和数据开发，这是我的个人数字花园，用来记录平时的闪念笔记以及总结内容。</p>
+<a href="#技能点"><h2 id="技能点"><span class="hanchor" ariaLabel="Anchor"># </span>技能点</h2></a>
+<ul>
+<li>AI 训猴师</li>
+<li>Apex 白银</li>
+<li>24岁魔法师</li>
+<li>不会算法题的程序员</li>
+<li>……</li>
+</ul>
 
 
       
