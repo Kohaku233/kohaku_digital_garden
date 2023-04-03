@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontends on Kohaku</title>
-    <link>https://kohaku-digital-garden.vercel.app/frontend/</link>
+    <link>https://www.kohaku.ink/frontend/</link>
     <description>Recent content in Frontends on Kohaku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Cn</language>
-    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kohaku-digital-garden.vercel.app/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>deploy</title>
-      <link>https://kohaku-digital-garden.vercel.app/frontend/deploy/</link>
+      <link>https://www.kohaku.ink/frontend/deploy/</link>
       <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://kohaku-digital-garden.vercel.app/frontend/deploy/</guid>
+      <guid>https://www.kohaku.ink/frontend/deploy/</guid>
       <description>数字花园部署[[_index]]</description>
     </item>
     
