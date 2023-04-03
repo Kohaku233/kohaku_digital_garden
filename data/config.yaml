@@ -1,12 +1,12 @@
 name: Kohaku
-enableToc: false
+enableToc: true
 openToc: false
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: false
-enableSPA: false
+enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: true
@@ -19,4 +19,4 @@ search:
   # operandApiKey: "jp9k5hudse2a828z98kxd6z3payi8u90rnje"
   # operandIndexId: "76bf623t3vjr"
 description: Kohaku 数字花园!
-page_title: "Kohaku 个人笔记整理"
+page_title: Kohaku
