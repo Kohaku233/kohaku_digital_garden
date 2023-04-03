@@ -1,5 +1,6 @@
 baseURL = "https://kohaku-digital-garden.vercel.app/"
 languageCode = "zh-Cn"
+lang = "zh-cn"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
