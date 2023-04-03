@@ -38,7 +38,7 @@ other = "黑暗模式"
 other = "编辑源码"
 
 [interactive_graph]
-other = "互动图"
+other = "内部链接关系图"
 
 [search]
 other = "搜索"
