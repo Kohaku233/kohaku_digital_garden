@@ -137,7 +137,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.4fb6c249db66f4eacfbddeddb5045997.min.json")
+          fetch("https:\/\/kohaku-digital-garden.vercel.app\/indices\/contentIndex.de3b02ed0110eccc2fe7f94cf3c86cbf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -157,6 +157,7 @@
       addCopyButtons();
       
 
+      addTitleToCodeBlocks();
       
 
       
@@ -183,7 +184,7 @@
             "https://kohaku-digital-garden.vercel.app",
             drawGlobal,
             [{"/moc":"#4388cc"}],
-            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":1,"opacityScale":3,"repelForce":2,"scale":1.2}
           );
 
         }
@@ -246,16 +247,10 @@
     };
   </script>
   
-  <script>
-    window.Million = {
-      navigate: (url) => (window.location.href = url),
-      prefetch: () => {},
-    }
-
-    window.addEventListener("DOMContentLoaded", () => {
-      init()
-      render()
-    })
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/kohaku-digital-garden.vercel.app\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
   </script>
   
   
