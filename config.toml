@@ -1,11 +1,7 @@
 baseURL = "https://kohaku-digital-garden.vercel.app/"
 languageCode = "en"
 defaultContentLanguage = "zh-cn"
-[languages]
-  [languages.en]
-    languagedirection = 'rtl'
-    title = 'Kohaku Garden'
-    weight = 1
+
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
