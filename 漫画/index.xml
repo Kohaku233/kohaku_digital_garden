@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>漫画s on Kohaku</title>
+    <link>https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/</link>
+    <description>Recent content in 漫画s on Kohaku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anime 花园</title>
+      <link>https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD/</guid>
+      <description>这里是 Anime 花园，请多指教！ [[漫画/我心里危险的东西]]</description>
+    </item>
+    
+    <item>
+      <title>我心里危险的东西</title>
+      <link>https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/%E6%88%91%E5%BF%83%E9%87%8C%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/%E6%88%91%E5%BF%83%E9%87%8C%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+      <description>真正的熬夜看完了这本漫画，大抵算是人生中真正意义上的第一次熬夜(指超过早上八点不睡觉)</description>
+    </item>
+    
+  </channel>
+</rss>
