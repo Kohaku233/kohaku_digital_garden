@@ -8,10 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="真正的熬夜看完了这本漫画，大抵算是人生中真正意义上的第一次熬夜(指超过早上八点不睡觉)"
+    content="FileReader 对象用于读取用户在浏览器中选择的文件。这在处理文件上传、读取文件内容以显示在页面上或解析文件数据时非常有用。
+FileReader 对象包含了一系列方法和事件，让你能够以不同的方式读取文件数据，例如：
+ readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &ldquo;UTF-8&rdquo;。 readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。 readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。  FileReader 对象还包含了一些事件，例如："
   />
   <title>
-    我心里危险的东西
+    网页上传原理
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,10 +318,10 @@
 
 
     <article>
-      <h1>我心里危险的东西</h1>
+      <h1>网页上传原理</h1>
       <p class="meta">
         Last updated 
-Apr 9, 2023
+Apr 10, 2023
 
  
           
@@ -358,7 +360,19 @@ Apr 9, 2023
 
 
 
-<p>真正的熬夜看完了这本漫画，大抵算是人生中真正意义上的第一次熬夜(指超过早上八点不睡觉)</p>
+<p><strong>FileReader</strong> 对象用于读取用户在浏览器中选择的文件。这在处理文件上传、读取文件内容以显示在页面上或解析文件数据时非常有用。</p>
+<p>FileReader 对象包含了一系列方法和事件，让你能够以不同的方式读取文件数据，例如：</p>
+<ol>
+<li>readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &ldquo;UTF-8&rdquo;。</li>
+<li>readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。</li>
+<li>readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。</li>
+</ol>
+<p>FileReader 对象还包含了一些事件，例如：</p>
+<ol>
+<li>onload: 当文件读取操作成功完成时触发。</li>
+<li>onerror: 当文件读取操作失败时触发。</li>
+<li>onprogress: 当文件读取操作正在进行时触发。</li>
+</ol>
 
 
     </article>
@@ -385,7 +399,7 @@ Apr 9, 2023
       
       
       <li>
-        <a href="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD/" data-ctx="漫画/我心里危险的东西" data-src="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD" class="internal-link">Anime 花园</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-10/" data-ctx="网页上传原理" data-src="/%E6%AF%8F%E6%97%A5/2023-04-10" class="internal-link">2023-04-10</a>
       </li>
       
       
