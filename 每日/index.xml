@@ -6,7 +6,18 @@
     <description>Recent content in 每日s on Kohaku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023-04-12</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-12/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-12/</guid>
+      <description>今天在工作中没有做总结，工作中主要做了两件事：帮其他组重建 React 项目，搭了包括配置项、请求封装、git 钩子等等脚手架，整体基于 umimax。跟进测试问题，修复了负数数字没有动画的问题。
+使用 umimax 最新版的时候遇到了两个之前没碰到过的问题：
+ VS Code 自带 [[TypeScript]] 编译器可能和项目安装的 TypeScript 版本不一致，如果项目内版本更高一些则会导致 tsconfig.json 配置文件报错从而导致整个项目的导入都有问题，有两个解决方案，一个是降级项目内的 TypeScript 版本另外一个就是设置 VS Code 的 TypeScript 版本，一般推荐第二种。第二种设置之后会在项目顶端生成 .</description>
+    </item>
+    
     <item>
       <title>2023-04-11</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-11/</link>
