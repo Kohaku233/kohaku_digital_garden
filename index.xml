@@ -8,6 +8,46 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-04-17</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-17/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-17/</guid>
+      <description>最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，[[实时数据开发语言选型]]上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的[[实时数据 Flink 路线图|路线图]]。</description>
+    </item>
+    
+    <item>
+      <title>实时数据 Flink 路线图</title>
+      <link>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
+      <description>以下是 GPT4 生成的为期三个月的 Flink 实时数据开发的路线图，每个技能及学习的知识都列出了具体时限以及实践内容
+ 了解你的需求。下面是一个针对 Flink 实时数据开发（使用 Java）的学习路线图，其中每个阶段都包含实践内容：
+  Java 基础加强（1 周）：
+ 学习 Java 面向对象编程（OOP）的概念，如类、对象、继承、封装和多态。 熟悉 Java 集合框架，如 List、Set、Map 等。 学习 Java 8 新特性，如 Lambda 表达式、Stream API 和 Optional 类。 实践：完成一些简单的 Java 编程练习，如实现数据结构和算法。    数据库与 SQL（1 周）：</description>
+    </item>
+    
+    <item>
+      <title>实时数据开发语言选型</title>
+      <link>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</guid>
+      <description>以下回答均由 GPT4 生成，后续会根据实际使用情况做更改
+ 问：做 Flink 实时流数据开发使用 Python 还是 Scala 更好？ 在实时流数据处理中，Apache Flink 提供了对 Java、Scala 和 Python 的支持。然而，在性能和生态系统方面，Scala 和 Java 通常比 Python 更优越。以下是关于在 Flink 实时流数据开发中选择 Python 和 Scala 的一些比较：</description>
+    </item>
+    
+    <item>
+      <title>年度计划</title>
+      <link>https://www.kohaku.ink/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/</guid>
+      <description>转眼间2023年也已过半，但是自身感觉却没过多长时间，这可能是因为把时间都放到了一成不变的事情上去并没有取得多大的进步和成就。在之前的 obsidian 仓库中也列出了年度计划，现在要在之前的计划上有更多的增补。</description>
+    </item>
+    
+    <item>
       <title>2023-04-16</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-16/</link>
       <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
@@ -16,7 +56,7 @@
       <description>最近的生活状态实在不太规律，经常性的1-2点睡觉然后7点半左右起床，平均下来每天的睡眠时间可能只有6个小时不到。而且由于中午55才下班，回去做完饭洗完碗可能都会一点过不少了，这个只能自己适应：要不就午睡时间缩短一点要不就提前晚上做好第二天的饭然后加热就行。
 最大的问题是我平均睡眠时间短是因为玩游戏的时间太多了，或者说固态化三件套时间太多了：基本就是 Youtube、Twitter、Tradingview 三个软件之间来回切换，然后除此以外的时间都在玩 Apex，基本没有时间放在认真读书和研究技能上的事情。减脂这件事情也因为不规律的生活导致进度拖延：这两周体重基本没有变化，虽然有持续在运动(因为吃的东西方面没有控制，经常中午不想做饭了就去吃麦当劳)。
 最近的表现实在是太不尽如人意，随着年龄的越来越大逐渐发现有些事情无法改变，但是有一点是我可以肯定的：只要持之以恒地做某件事情，那么这件事情在手中就会做的越来越好，起初可能完全带来不了任何收益而且会占用大量的时间但是随着时间的推进能做到的事情要远超自己想象。我会先从放弃网游和看没营养的视频开始把时间慢慢地挪出来做更有意义的事情。
-明天要做的最重要的事情就是把[[一年计划、三年计划|年度计划]]都大致列一个，看看哪些事情对目前的自己是最重要的，如何去达成它们，不在乎最终达成的结果而是在意过程如何。</description>
+明天要做的最重要的事情就是把 [[年度计划|年度计划]] 都大致列一个，看看哪些事情对目前的自己是最重要的，如何去达成它们，不在乎最终达成的结果而是在意过程如何。</description>
     </item>
     
     <item>
