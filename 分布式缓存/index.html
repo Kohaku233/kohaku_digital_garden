@@ -8,10 +8,14 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="分布式缓存（Distributed Cache）是一种在分布式计算环境中存储和共享数据的技术。它允许在计算集群的各个节点之间共享数据，以便更快、更高效地进行计算。以下几个关键点可以帮助理解分布式缓存的基本概念：
+  数据共享：分布式缓存允许在分布式计算节点之间共享数据。这可以确保各计算节点可以访问到相同的数据，从而提高计算性能和一致性。
+  缓存：分布式缓存通常将数据存储在内存中，以便在计算过程中快速访问。这有助于减少数据访问延迟，提高计算效率。
+  一致性：分布式缓存需要在不同节点之间维护数据的一致性。这通常需要采用一些同步和数据复制技术，以确保各节点上的数据保持一致。
+  在 Flink 中，分布式缓存处于辅助性地位，主要用于提高数据访问性能和简化数据共享。Flink 提供了一种简单的分布式缓存机制，允许用户将本地或远程文件作为缓存文件注册到 Flink 任务中。这些缓存文件会被分发到所有计算节点，并在本地文件系统中缓存。然后，在 Flink 任务的处理过程中，用户可以通过分布式缓存 API 快速访问这些缓存文件。"
   />
   <title>
-    教程s
+    分布式缓存
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,31 +320,131 @@
 
 
     <article>
-        <h1>All 教程s</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 4, 2023
+      <h1>分布式缓存</h1>
+      <p class="meta">
+        Last updated 
+Apr 18, 2023
 
+ 
+          
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">obsidian本地内容同步到数字花园</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>分布式缓存（Distributed Cache）是一种在分布式计算环境中存储和共享数据的技术。它允许在计算集群的各个节点之间共享数据，以便更快、更高效地进行计算。以下几个关键点可以帮助理解分布式缓存的基本概念：</p>
+<ol>
+<li>
+<p>数据共享：分布式缓存允许在分布式计算节点之间共享数据。这可以确保各计算节点可以访问到相同的数据，从而提高计算性能和一致性。</p>
+</li>
+<li>
+<p>缓存：分布式缓存通常将数据存储在内存中，以便在计算过程中快速访问。这有助于减少数据访问延迟，提高计算效率。</p>
+</li>
+<li>
+<p>一致性：分布式缓存需要在不同节点之间维护数据的一致性。这通常需要采用一些同步和数据复制技术，以确保各节点上的数据保持一致。</p>
+</li>
+</ol>
+<p>在 Flink 中，分布式缓存处于辅助性地位，主要用于提高数据访问性能和简化数据共享。Flink 提供了一种简单的分布式缓存机制，允许用户将本地或远程文件作为缓存文件注册到 Flink 任务中。这些缓存文件会被分发到所有计算节点，并在本地文件系统中缓存。然后，在 Flink 任务的处理过程中，用户可以通过分布式缓存 API 快速访问这些缓存文件。</p>
+<p>在 Flink 中使用分布式缓存的典型场景包括：</p>
+<ol>
+<li>
+<p>外部数据访问：当 Flink 任务需要访问外部数据（如配置文件、辅助数据等）时，可以使用分布式缓存将这些数据分发到各计算节点，以便在处理过程中快速访问。</p>
+</li>
+<li>
+<p>数据共享：在进行数据处理时，如果需要在计算节点之间共享部分数据，可以使用分布式缓存将这些数据存储和共享。</p>
+</li>
+</ol>
+<p>总之，分布式缓存在 Flink 中主要用于提高数据访问性能和简化数据共享。通过数据共享、缓存和一致性等特性，分布式缓存可以在分布式计算环境中提高计算性能和一致性。虽然分布式缓存不是 Flink 核心原理的一部分，但它在实际应用中发挥了重要的辅助作用。</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" data-ctx="分布式缓存" data-src="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="internal-link">Flink 基本原理</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -355,6 +459,7 @@ Apr 4, 2023
             </ul>
     </footer>
 </div>
+
 
 </div>
 </body>

@@ -8,10 +8,15 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="迭代计算是一种反复执行计算过程，直到满足某种终止条件的计算方法。在许多数据处理任务中，迭代计算是一种常见的处理模式，尤其是在图计算、机器学习等领域。迭代计算的基本概念可以通过以下几个关键点来理解：
+  初始状态：迭代计算开始时，需要一个初始状态。这个状态通常包含一些基本的数据和参数，用于启动迭代过程。
+  迭代函数：迭代函数是一个用于更新状态的函数。在每次迭代中，迭代函数会根据当前状态计算新的状态。迭代函数可以是简单的数学公式，也可以是复杂的数据处理逻辑。
+  终止条件：终止条件是一个用于判断迭代是否结束的条件。当终止条件满足时，迭代计算停止，输出最终结果。终止条件可以是迭代次数、误差阈值等。
+  在 Flink 中，迭代计算是一个重要的处理模式。Flink 支持在数据流中执行迭代计算，这使得 Flink 可以处理那些需要反复执行计算过程的任务，例如图计算、机器学习等。Flink 提供了两种迭代计算模式：批量迭代和流式迭代。
+  批量迭代（DataSet API）： Flink 的 DataSet API 支持批量迭代计算。在这种模式下，迭代计算是基于批处理数据集进行的。批量迭代在每次迭代中处理整个数据集，然后更新状态。当满足终止条件时，批量迭代结束，并输出最终结果。批量迭代适用于那些需要对整个数据集进行全局分析的任务，如图计算、聚类分析等。"
   />
   <title>
-    教程s
+    迭代计算
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,31 +321,132 @@
 
 
     <article>
-        <h1>All 教程s</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 4, 2023
+      <h1>迭代计算</h1>
+      <p class="meta">
+        Last updated 
+Apr 18, 2023
 
+ 
+          
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">obsidian本地内容同步到数字花园</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>迭代计算是一种反复执行计算过程，直到满足某种终止条件的计算方法。在许多数据处理任务中，迭代计算是一种常见的处理模式，尤其是在图计算、机器学习等领域。迭代计算的基本概念可以通过以下几个关键点来理解：</p>
+<ol>
+<li>
+<p>初始状态：迭代计算开始时，需要一个初始状态。这个状态通常包含一些基本的数据和参数，用于启动迭代过程。</p>
+</li>
+<li>
+<p>迭代函数：迭代函数是一个用于更新状态的函数。在每次迭代中，迭代函数会根据当前状态计算新的状态。迭代函数可以是简单的数学公式，也可以是复杂的数据处理逻辑。</p>
+</li>
+<li>
+<p>终止条件：终止条件是一个用于判断迭代是否结束的条件。当终止条件满足时，迭代计算停止，输出最终结果。终止条件可以是迭代次数、误差阈值等。</p>
+</li>
+</ol>
+<p>在 Flink 中，迭代计算是一个重要的处理模式。Flink 支持在数据流中执行迭代计算，这使得 Flink 可以处理那些需要反复执行计算过程的任务，例如图计算、机器学习等。Flink 提供了两种迭代计算模式：批量迭代和流式迭代。</p>
+<ol>
+<li>
+<p>批量迭代（DataSet API）：
+Flink 的 DataSet API 支持批量迭代计算。在这种模式下，迭代计算是基于批处理数据集进行的。批量迭代在每次迭代中处理整个数据集，然后更新状态。当满足终止条件时，批量迭代结束，并输出最终结果。批量迭代适用于那些需要对整个数据集进行全局分析的任务，如图计算、聚类分析等。</p>
+</li>
+<li>
+<p>流式迭代（DataStream API）：
+Flink 的 DataStream API 支持流式迭代计算。在这种模式下，迭代计算是基于实时数据流进行的。流式迭代可以在数据流中连续处理数据，实现低延迟的迭代计算。流式迭代适用于那些需要实时反馈和动态调整的任务，如在线学习、实时推荐等。</p>
+</li>
+</ol>
+<p>总之，迭代计算在 Flink 中处于重要地位，它使得 Flink 可以处理那些需要反复执行计算过程的任务。通过批量迭代和流式迭代两种模式，Flink 能够满足不同类型的迭代计算需求，提供灵活的数据处理能力。</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" data-ctx="迭代计算" data-src="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="internal-link">Flink 基本原理</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -355,6 +461,7 @@ Apr 4, 2023
             </ul>
     </footer>
 </div>
+
 
 </div>
 </body>

@@ -8,10 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="在 Flink 中，数据处理时间是一个重要概念，它与数据处理过程中的时间相关性有关。Flink 支持两种主要的时间概念：事件时间（Event Time）和处理时间（Processing Time）。这两种时间概念有各自的特点和用途，我们将分别讨论它们。
+ 事件时间（Event Time）： 事件时间是指数据元素产生时的时间戳。这意味着数据中的每个元素都有一个与之相关的事件时间。这个时间通常是由数据产生源（如传感器、日志记录器等）记录的。Flink 使用水位线（Watermark）机制来处理事件时间。水位线是一种特殊的数据元素，表示某一时刻之前的所有事件已经到达系统。这可以帮助 Flink 确定何时可以对基于事件时间的窗口进行计算和输出。  使用事件时间的优势在于可以保证处理的结果与数据发生的时间顺序一致，即使数据源产生了乱序或延迟数据。这对于需要准确计算基于事件发生时间的统计信息、分析和报告的应用场景非常重要，例如金融交易分析、传感器数据处理等。
+处理时间（Processing Time）： 处理时间是指 Flink 接收到数据元素时的系统时间。处理时间依赖于数据元素到达 Flink 系统的顺序和速度。由于数据到达的顺序可能与实际发生的顺序不同，因此基于处理时间的计算可能会受到数据延迟和乱序的影响。  处理时间的优势在于它简化了时间处理逻辑，因为 Flink 只需考虑当前系统时间。此外，处理时间通常具有较低的延迟，因为它不需要等待水位线或其他时间同步机制。这对于需要快速响应和实时反馈的应用场景非常有用，例如实时监控和报警。"
   />
   <title>
-    教程s
+    数据处理时间
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,31 +318,120 @@
 
 
     <article>
-        <h1>All 教程s</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 4, 2023
+      <h1>数据处理时间</h1>
+      <p class="meta">
+        Last updated 
+Apr 18, 2023
 
+ 
+          
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">obsidian本地内容同步到数字花园</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>在 Flink 中，数据处理时间是一个重要概念，它与数据处理过程中的时间相关性有关。Flink 支持两种主要的时间概念：事件时间（Event Time）和处理时间（Processing Time）。这两种时间概念有各自的特点和用途，我们将分别讨论它们。</p>
+<ol>
+<li>事件时间（Event Time）：
+事件时间是指数据元素产生时的时间戳。这意味着数据中的每个元素都有一个与之相关的事件时间。这个时间通常是由数据产生源（如传感器、日志记录器等）记录的。Flink 使用水位线（Watermark）机制来处理事件时间。水位线是一种特殊的数据元素，表示某一时刻之前的所有事件已经到达系统。这可以帮助 Flink 确定何时可以对基于事件时间的窗口进行计算和输出。</li>
+</ol>
+<p>使用事件时间的优势在于可以保证处理的结果与数据发生的时间顺序一致，即使数据源产生了乱序或延迟数据。这对于需要准确计算基于事件发生时间的统计信息、分析和报告的应用场景非常重要，例如金融交易分析、传感器数据处理等。</p>
+<ol start="2">
+<li>处理时间（Processing Time）：
+处理时间是指 Flink 接收到数据元素时的系统时间。处理时间依赖于数据元素到达 Flink 系统的顺序和速度。由于数据到达的顺序可能与实际发生的顺序不同，因此基于处理时间的计算可能会受到数据延迟和乱序的影响。</li>
+</ol>
+<p>处理时间的优势在于它简化了时间处理逻辑，因为 Flink 只需考虑当前系统时间。此外，处理时间通常具有较低的延迟，因为它不需要等待水位线或其他时间同步机制。这对于需要快速响应和实时反馈的应用场景非常有用，例如实时监控和报警。</p>
+<p>在实际应用中，选择事件时间还是处理时间取决于对结果准确性和处理延迟的要求。如果需要考虑数据发生的时间顺序以获取准确的统计结果，那么事件时间是更好的选择；如果对实时性有较高要求，可以选择处理时间。Flink 也支持同时使用事件时间和处理时间，以便在不同的计算阶段或任务中根据需求选择合适的时间概念。</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" data-ctx="数据处理时间" data-src="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="internal-link">Flink 基本原理</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -355,6 +446,7 @@ Apr 4, 2023
             </ul>
     </footer>
 </div>
+
 
 </div>
 </body>

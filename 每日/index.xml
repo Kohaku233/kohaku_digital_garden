@@ -6,7 +6,16 @@
     <description>Recent content in 每日s on Kohaku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023-04-18</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-18/</link>
+      <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-18/</guid>
+      <description>[[Flink 基本原理]] 由 GPT4 初步生成，后续根据学习内容及时调整。接下来一段时间就把时间和精力主要投入到大数据开发上面。根据网上的评价和招聘情况可以看出大数据方面非常缺人而开发岗则极度火热，究其原因可能是大数据相关的知识大而杂但是到岗位和业务之后又会变得细而精，学习起来不容易上手而且国内没有太多相关的中文文档，网上的知识也是寥寥可数，培训班对于这个方向也没有像前后端那样完整的培训体系。</description>
+    </item>
+    
     <item>
       <title>2023-04-17</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-17/</link>
