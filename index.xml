@@ -8,6 +8,25 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-04-19</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-19/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-19/</guid>
+      <description>由于经常逛推而且收藏一些 thread，但是 twitter 看历史以及收藏的功能做的实在是太烂而且格式也不统一并且不支持发送长文所以基本上保存就等于学会，实际上基本不会再点开一次，很多优秀的文章也因此没有机会再完整阅读了，最近想利用浏览器插件在推特保存 thread 过后自动向 github仓库提交文件，然后后续本地仓库 pull 一下就行(最好设置一个自动化流程，每天早上自动同步)。</description>
+    </item>
+    
+    <item>
+      <title>转行数据理由</title>
+      <link>https://www.kohaku.ink/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</guid>
+      <description>就目前就业市场来看前后端这类开发岗位基本上叫苦连天，很多人找不到工作(这是比较真实的情况)，而大数据开发类型的我在网上和有关求职 APP 上看到的抱怨较少而且开的工资普遍比开发岗位要来的多。仔细了解后更是觉得大数据这行会在 AI 蓬勃发展后跟着发展起来，未来会有越来越多的人去了解大数据去学习大数据，毕竟 AI 是绝对离不了数据的，好的 AI 更是如此。
+(未完待续……)</description>
+    </item>
+    
+    <item>
       <title>2023-04-18</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-18/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>

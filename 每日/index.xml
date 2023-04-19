@@ -6,7 +6,16 @@
     <description>Recent content in 每日s on Kohaku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023-04-19</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-19/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-19/</guid>
+      <description>由于经常逛推而且收藏一些 thread，但是 twitter 看历史以及收藏的功能做的实在是太烂而且格式也不统一并且不支持发送长文所以基本上保存就等于学会，实际上基本不会再点开一次，很多优秀的文章也因此没有机会再完整阅读了，最近想利用浏览器插件在推特保存 thread 过后自动向 github仓库提交文件，然后后续本地仓库 pull 一下就行(最好设置一个自动化流程，每天早上自动同步)。</description>
+    </item>
+    
     <item>
       <title>2023-04-18</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-18/</link>
