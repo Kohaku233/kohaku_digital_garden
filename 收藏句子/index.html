@@ -9,6 +9,7 @@
   <meta
     name="description"
     content=" 当你停止创造，你的才能就不再重要，你所拥有的只剩下你的品味。而品味会裹挟你，让你排斥他人，变得狭隘。所以，要创造。
+  Ars longa, vita brevis 艺术长久，生命短暂
  "
   />
   <title>
@@ -135,13 +136,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e3f689b51b001e9356ef560166596bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fcc4882eeda7c5a7d1de6bebae653cf8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.52ca4fc7e80e70422c17aa40416f1b4d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -361,6 +362,10 @@ Apr 19, 2023
 
 <blockquote>
 <p>当你停止创造，你的才能就不再重要，你所拥有的只剩下你的品味。而品味会裹挟你，让你排斥他人，变得狭隘。所以，要创造。</p>
+</blockquote>
+<blockquote>
+<p>Ars longa, vita brevis
+艺术长久，生命短暂</p>
 </blockquote>
 
 

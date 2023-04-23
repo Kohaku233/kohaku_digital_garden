@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，[[实时数据开发语言选型]]上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的[[实时数据 Flink 路线图|路线图]]。"
+    content="最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，[[大数据/实时数据开发语言选型]]上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的[[大数据/实时数据 Flink 路线图|路线图]]。"
   />
   <title>
     2023-04-17
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e3f689b51b001e9356ef560166596bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fcc4882eeda7c5a7d1de6bebae653cf8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.52ca4fc7e80e70422c17aa40416f1b4d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -444,7 +444,7 @@ Apr 17, 2023
 
 
 
-<p>最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，<a href="/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B" rel="noopener" class="internal-link" data-src="/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B">实时数据开发语言选型</a>上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的<a href="/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE" rel="noopener" class="internal-link" data-src="/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE">路线图</a>。</p>
+<p>最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，<a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B">实时数据开发语言选型</a>上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的<a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE">路线图</a>。</p>
 
 
     </article>

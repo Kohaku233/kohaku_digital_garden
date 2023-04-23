@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。"
+    content="安装了一个可以支持大部分自定义的主题：[[obsidian/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。"
   />
   <title>
     2023-04-22
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e3f689b51b001e9356ef560166596bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fcc4882eeda7c5a7d1de6bebae653cf8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.52ca4fc7e80e70422c17aa40416f1b4d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -401,7 +401,7 @@ Apr 22, 2023
 
 
 
-<p>安装了一个可以支持大部分自定义的主题：<a href="/Anuppuccin" rel="noopener" class="internal-link" data-src="/Anuppuccin">Anuppuccin</a>，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</p>
+<p>安装了一个可以支持大部分自定义的主题：<a href="/obsidian/Anuppuccin" rel="noopener" class="internal-link" data-src="/obsidian/Anuppuccin">Anuppuccin</a>，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</p>
 
 
     </article>

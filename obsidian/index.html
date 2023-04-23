@@ -8,13 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Flink 是一个分布式大数据处理框架，它可以处理大量数据，并提供快速、可靠和实时的数据处理能力。Flink 的基本原理可以通过以下几个简单的概念来理解：
-  数据流：Flink 使用数据流的概念来表示处理的数据。数据流是一个连续的数据元素序列，这些元素被处理、转换和输出到最终的结果中。简单说，数据流就是从数据源（如文件、数据库等）读取的数据，在 Flink 中经过一系列处理操作，最后输出到目的地（如另一个文件、数据库等）。
-  节点和任务：Flink 任务是数据处理的基本单元。一个任务可以是一个简单的数据转换，例如过滤、映射等，也可以是更复杂的操作，例如聚合、排序等。任务在 Flink 中以节点的形式存在。节点是构成 Flink 数据流图的基本元素，数据流图是 Flink 对数据处理流程的一种抽象表示。
-  并行处理：Flink 具有很好的并行处理能力。这意味着它可以将一个任务划分为多个子任务，在多个计算资源（如 CPU、内存等）上同时处理，以提高整体处理速度。Flink 会自动将任务划分为多个子任务，并行执行，最后将结果汇总。"
+    content=""
   />
   <title>
-    Flink 基本原理
+    Obsidians
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -137,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e3f689b51b001e9356ef560166596bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fcc4882eeda7c5a7d1de6bebae653cf8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.52ca4fc7e80e70422c17aa40416f1b4d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,345 +316,29 @@
 
 
     <article>
-      <h1>Flink 基本原理</h1>
-      <p class="meta">
-        Last updated 
-Apr 18, 2023
-
- 
-          
-
-      </p>
-      <ul class="tags">
-    
-</ul>
-
-      
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<p>Flink 是一个分布式大数据处理框架，它可以处理大量数据，并提供快速、可靠和实时的数据处理能力。Flink 的基本原理可以通过以下几个简单的概念来理解：</p>
-<ol>
-<li>
-<p>数据流：Flink 使用数据流的概念来表示处理的数据。数据流是一个连续的数据元素序列，这些元素被处理、转换和输出到最终的结果中。简单说，数据流就是从数据源（如文件、数据库等）读取的数据，在 Flink 中经过一系列处理操作，最后输出到目的地（如另一个文件、数据库等）。</p>
-</li>
-<li>
-<p>节点和任务：<strong>Flink 任务是数据处理的基本单元。一个任务可以是一个简单的数据转换，例如过滤、映射等，也可以是更复杂的操作，例如聚合、排序等</strong>。任务在 Flink 中以节点的形式存在。<strong>节点是构成 Flink 数据流图的基本元素，数据流图是 Flink 对数据处理流程的一种抽象表示</strong>。</p>
-</li>
-<li>
-<p>并行处理：Flink 具有很好的并行处理能力。这意味着它可以将一个任务划分为多个子任务，在多个计算资源（如 CPU、内存等）上同时处理，以提高整体处理速度。Flink 会自动将任务划分为多个子任务，并行执行，最后将结果汇总。</p>
-</li>
-<li>
-<p><a href="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4" rel="noopener" class="internal-link" data-src="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4">数据处理时间</a>：Flink 支持不同的时间概念，包括事件时间（Event Time）和处理时间（Processing Time）。事件时间是数据元素产生的时间，处理时间是 Flink 接收到数据元素的时间。这两种时间概念可用于处理数据时的时间窗口计算，根据实际需求选择合适的时间概念。</p>
-</li>
-<li>
-<p><a href="/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99" rel="noopener" class="internal-link" data-src="/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99">状态和容错</a>：Flink 具有状态管理功能，可以在任务执行过程中存储和管理数据的状态。为了确保数据处理的可靠性，Flink 采用了一种称为“检查点”（Checkpoint）的机制。在执行过程中，Flink 会周期性地将任务的状态保存到外部存储系统，以便在发生故障时从最近的检查点恢复任务执行。</p>
-</li>
-</ol>
-<p>简单来说，Flink 是一个强大的大数据处理框架，它可以处理大量数据，并提供实时、可靠和高效的数据处理能力。通过数据流、节点和任务、并行处理、时间概念和状态管理等核心概念，Flink 能够满足不同类型的数据处理需求。</p>
-<p><a href="/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97" rel="noopener" class="internal-link" data-src="/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97">迭代计算</a>
-<a href="/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F" rel="noopener" class="internal-link" data-src="/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F">广播变量</a>
-<a href="/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98" rel="noopener" class="internal-link" data-src="/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98">分布式缓存</a></p>
-
-
+        <h1>All Obsidians</h1>
+        
+        <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 23, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/obsidian/Anuppuccin/" class="internal-link" data-src="/obsidian/Anuppuccin/">Anuppuccin</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li></ul>
+
+        
     </article>
-    <hr/>
-
-
-<div class="page-end" id="footer">
-    <div class="backlinks-container">
-        <h3>Backlinks</h3>
-<ul class="backlinks">
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-18/" data-ctx="Flink 基本原理" data-src="/%E6%AF%8F%E6%97%A5/2023-04-18" class="internal-link">2023-04-18</a>
-      </li>
-      
-      
-      
-</ul>
-
-    </div>
-    <div>
-        <script
-  async
-  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
-  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
-  crossorigin="anonymous"
-></script>
-<h3>Interactive Graph</h3>
-<div id="graph-container"></div>
-<style>
-  :root {
-    --g-node: var(--secondary);
-    --g-node-active: var(--primary);
-    --g-node-inactive: var(--visited);
-    --g-link: var(--outlinegray);
-    --g-link-active: #5a7282;
-  }
-</style>
-
-<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
-
-    </div>
-</div>
-
-
-
 
 
 
@@ -672,7 +353,6 @@ Apr 18, 2023
             </ul>
     </footer>
 </div>
-
 
 </div>
 </body>

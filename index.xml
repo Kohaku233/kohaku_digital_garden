@@ -19,10 +19,10 @@
     
     <item>
       <title>Anuppuccin</title>
-      <link>https://www.kohaku.ink/Anuppuccin/</link>
+      <link>https://www.kohaku.ink/obsidian/Anuppuccin/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Anuppuccin/</guid>
+      <guid>https://www.kohaku.ink/obsidian/Anuppuccin/</guid>
       <description> [!NOTE] Anuppuccin 需要安装不少插件以及自定义
  Callout 代表标注
 1 2 3 4 5  { &amp;#34;test&amp;#34;:&amp;#34;bob&amp;#34;, &amp;#34;sada&amp;#34;:&amp;#34;dasc&amp;#34;, }   </description>
@@ -34,7 +34,7 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
-      <description>安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
+      <description>安装了一个可以支持大部分自定义的主题：[[obsidian/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
     </item>
     
     <item>
@@ -54,15 +54,16 @@
       
       <guid>https://www.kohaku.ink/%E6%94%B6%E8%97%8F%E5%8F%A5%E5%AD%90/</guid>
       <description> 当你停止创造，你的才能就不再重要，你所拥有的只剩下你的品味。而品味会裹挟你，让你排斥他人，变得狭隘。所以，要创造。
+  Ars longa, vita brevis 艺术长久，生命短暂
  </description>
     </item>
     
     <item>
       <title>转行数据理由</title>
-      <link>https://www.kohaku.ink/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</link>
       <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</guid>
       <description>就目前就业市场来看前后端这类开发岗位基本上叫苦连天，很多人找不到工作(这是比较真实的情况)，而大数据开发类型的我在网上和有关求职 APP 上看到的抱怨较少而且开的工资普遍比开发岗位要来的多。仔细了解后更是觉得大数据这行会在 AI 蓬勃发展后跟着发展起来，未来会有越来越多的人去了解大数据去学习大数据，毕竟 AI 是绝对离不了数据的，好的 AI 更是如此。
 (未完待续……)</description>
     </item>
@@ -73,17 +74,17 @@
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-18/</guid>
-      <description>[[Flink 基本原理]] 由 GPT4 初步生成，后续根据学习内容及时调整。接下来一段时间就把时间和精力主要投入到大数据开发上面。根据网上的评价和招聘情况可以看出大数据方面非常缺人而开发岗则极度火热，究其原因可能是大数据相关的知识大而杂但是到岗位和业务之后又会变得细而精，学习起来不容易上手而且国内没有太多相关的中文文档，网上的知识也是寥寥可数，培训班对于这个方向也没有像前后端那样完整的培训体系。
-之后会把时间投入到数据学习中，[[转行数据理由|为什么呢]]？大数据开发在 AI 蓬勃发展之后也会有一大波进步的空间，现在国内在大数据开发上精通的人相对开发岗位的人来说少得多，而且中文文档和培训资料也是少得多，就身边人就业情况来说目前还没听说过大数据开发这个方向的，大部分都是做游戏或者普通开发岗。
+      <description>[[大数据/Flink 基本原理]] 由 GPT4 初步生成，后续根据学习内容及时调整。接下来一段时间就把时间和精力主要投入到大数据开发上面。根据网上的评价和招聘情况可以看出大数据方面非常缺人而开发岗则极度火热，究其原因可能是大数据相关的知识大而杂但是到岗位和业务之后又会变得细而精，学习起来不容易上手而且国内没有太多相关的中文文档，网上的知识也是寥寥可数，培训班对于这个方向也没有像前后端那样完整的培训体系。
+之后会把时间投入到数据学习中，[[大数据/转行数据理由|为什么呢]]？大数据开发在 AI 蓬勃发展之后也会有一大波进步的空间，现在国内在大数据开发上精通的人相对开发岗位的人来说少得多，而且中文文档和培训资料也是少得多，就身边人就业情况来说目前还没听说过大数据开发这个方向的，大部分都是做游戏或者普通开发岗。
 大数据开发要学习的内容和知识点相当多，基本计算机内容都会涵盖到包括操作系统、Linux 命令、容器启停、集群运维还有各种持久化层例如 ES、Redis、Hbase、ClickHouse 等等。仅拿前端来对比，要比前端熟悉和会的知识点多得多，实际上前端主要掌握 JS、CSS 两件套就够了，但数据开发要掌握的却是整个计算机知识体系。我喜欢做有挑战的事情，最近更是希望自己做能长期坚持下去的事情，而大数据开发则是一个很好的方向，但是要同时切记不管什么知识能用到生活中、工作中为人类社会带来价值的事情才是有意义的知识，不要一味地钻研知识从而掉入了唯知识论的思维中，觉得万般皆下品，惟有读书高。不去做能为他人带来价值为社会带来价值的事情，长期下来只会觉得内心空虚。</description>
     </item>
     
     <item>
       <title>Flink 基本原理</title>
-      <link>https://www.kohaku.ink/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</guid>
       <description>Flink 是一个分布式大数据处理框架，它可以处理大量数据，并提供快速、可靠和实时的数据处理能力。Flink 的基本原理可以通过以下几个简单的概念来理解：
   数据流：Flink 使用数据流的概念来表示处理的数据。数据流是一个连续的数据元素序列，这些元素被处理、转换和输出到最终的结果中。简单说，数据流就是从数据源（如文件、数据库等）读取的数据，在 Flink 中经过一系列处理操作，最后输出到目的地（如另一个文件、数据库等）。
   节点和任务：Flink 任务是数据处理的基本单元。一个任务可以是一个简单的数据转换，例如过滤、映射等，也可以是更复杂的操作，例如聚合、排序等。任务在 Flink 中以节点的形式存在。节点是构成 Flink 数据流图的基本元素，数据流图是 Flink 对数据处理流程的一种抽象表示。
@@ -92,10 +93,10 @@
     
     <item>
       <title>分布式缓存</title>
-      <link>https://www.kohaku.ink/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/</guid>
       <description>分布式缓存（Distributed Cache）是一种在分布式计算环境中存储和共享数据的技术。它允许在计算集群的各个节点之间共享数据，以便更快、更高效地进行计算。以下几个关键点可以帮助理解分布式缓存的基本概念：
   数据共享：分布式缓存允许在分布式计算节点之间共享数据。这可以确保各计算节点可以访问到相同的数据，从而提高计算性能和一致性。
   缓存：分布式缓存通常将数据存储在内存中，以便在计算过程中快速访问。这有助于减少数据访问延迟，提高计算效率。
@@ -116,10 +117,10 @@
     
     <item>
       <title>广播变量</title>
-      <link>https://www.kohaku.ink/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%B9%BF%E6%92%AD%E5%8F%98%E9%87%8F/</guid>
       <description>广播变量（Broadcast Variables）是一种特殊的数据结构，用于在分布式计算环境中共享数据。在许多大数据处理任务中，广播变量可以有效解决数据共享和同步的问题。以下几个关键点可以帮助理解广播变量的基本概念：
   全局共享：广播变量是一个全局共享的数据结构，它可以被所有计算节点访问。这意味着广播变量中的数据可以在整个计算集群中传播和共享，从而确保所有节点可以访问到相同的数据。
   只读：广播变量是只读的，这意味着一旦创建并广播，它的内容就不能再修改。这有助于保持数据的一致性，并避免在分布式环境中出现数据竞争和同步问题。
@@ -129,10 +130,10 @@
     
     <item>
       <title>数据处理时间</title>
-      <link>https://www.kohaku.ink/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%97%B6%E9%97%B4/</guid>
       <description>在 Flink 中，数据处理时间是一个重要概念，它与数据处理过程中的时间相关性有关。Flink 支持两种主要的时间概念：事件时间（Event Time）和处理时间（Processing Time）。这两种时间概念有各自的特点和用途，我们将分别讨论它们。
  事件时间（Event Time）： 事件时间是指数据元素产生时的时间戳。这意味着数据中的每个元素都有一个与之相关的事件时间。这个时间通常是由数据产生源（如传感器、日志记录器等）记录的。Flink 使用水位线（Watermark）机制来处理事件时间。水位线是一种特殊的数据元素，表示某一时刻之前的所有事件已经到达系统。这可以帮助 Flink 确定何时可以对基于事件时间的窗口进行计算和输出。  使用事件时间的优势在于可以保证处理的结果与数据发生的时间顺序一致，即使数据源产生了乱序或延迟数据。这对于需要准确计算基于事件发生时间的统计信息、分析和报告的应用场景非常重要，例如金融交易分析、传感器数据处理等。
 处理时间（Processing Time）： 处理时间是指 Flink 接收到数据元素时的系统时间。处理时间依赖于数据元素到达 Flink 系统的顺序和速度。由于数据到达的顺序可能与实际发生的顺序不同，因此基于处理时间的计算可能会受到数据延迟和乱序的影响。  处理时间的优势在于它简化了时间处理逻辑，因为 Flink 只需考虑当前系统时间。此外，处理时间通常具有较低的延迟，因为它不需要等待水位线或其他时间同步机制。这对于需要快速响应和实时反馈的应用场景非常有用，例如实时监控和报警。</description>
@@ -140,10 +141,10 @@
     
     <item>
       <title>状态和容错</title>
-      <link>https://www.kohaku.ink/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E7%8A%B6%E6%80%81%E5%92%8C%E5%AE%B9%E9%94%99/</guid>
       <description>在 Flink 中，状态（State）和容错（Fault Tolerance）是两个关键概念，它们确保了数据处理过程的可靠性和一致性。我们将分别讨论这两个概念：
  状态（State）： 状态是 Flink 任务执行过程中的中间数据。在处理数据流时，任务可能需要根据之前处理过的数据元素来决定如何处理当前的数据元素。这些之前处理过的数据以状态的形式存储。状态可以是简单的计数器、列表，也可以是复杂的数据结构，如哈希表、窗口缓冲区等。  Flink 提供了丰富的状态类型和状态访问接口，以便用户可以根据需要选择合适的状态类型，并在任务中方便地操作状态。Flink 还支持状态后端（State Backend）的概念，用于存储和管理状态数据。状态后端可以是内存、文件系统或分布式存储系统，具体取决于性能、持久性和可扩展性等需求。
 容错（Fault Tolerance）： 容错是指在面对系统故障（如节点宕机、网络故障等）时，Flink 能够保证数据处理的正确性和一致性。为了实现容错，Flink 采用了一种称为“检查点”（Checkpoint）的机制。检查点是 Flink 任务执行过程中的某个时刻的状态快照。Flink 会周期性地将任务的状态保存到检查点中，并将检查点存储到可靠的外部存储系统（如分布式文件系统）。  当发生故障时，Flink 可以从最近的检查点恢复任务执行。这意味着 Flink 会重新加载检查点中的状态数据，并从检查点对应的数据流位置开始重新处理数据。这样，Flink 可以保证在故障发生后，数据处理可以从一个已知的正确状态开始，并保证处理结果的一致性。</description>
@@ -151,10 +152,10 @@
     
     <item>
       <title>迭代计算</title>
-      <link>https://www.kohaku.ink/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97/</guid>
       <description>迭代计算是一种反复执行计算过程，直到满足某种终止条件的计算方法。在许多数据处理任务中，迭代计算是一种常见的处理模式，尤其是在图计算、机器学习等领域。迭代计算的基本概念可以通过以下几个关键点来理解：
   初始状态：迭代计算开始时，需要一个初始状态。这个状态通常包含一些基本的数据和参数，用于启动迭代过程。
   迭代函数：迭代函数是一个用于更新状态的函数。在每次迭代中，迭代函数会根据当前状态计算新的状态。迭代函数可以是简单的数学公式，也可以是复杂的数据处理逻辑。
@@ -169,15 +170,15 @@
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-17/</guid>
-      <description>最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，[[实时数据开发语言选型]]上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的[[实时数据 Flink 路线图|路线图]]。</description>
+      <description>最近工作上需要使用代码开发重构之前使用可视化平台开发的作业，[[大数据/实时数据开发语言选型]]上斟酌了很久，最后决定采用 Java 开发。组内没有任何使用代码开发数据的经验，前期选型语言上就花费了大量的时间，需要慢慢结合实践去熟悉 Java 的使用以及流数据代码开发。为此也根据 GPT4 列出实时数据代码开发的[[大数据/实时数据 Flink 路线图|路线图]]。</description>
     </item>
     
     <item>
       <title>实时数据 Flink 路线图</title>
-      <link>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
       <description>以下是 GPT4 生成的为期三个月的 Flink 实时数据开发的路线图，每个技能及学习的知识都列出了具体时限以及实践内容
  了解你的需求。下面是一个针对 Flink 实时数据开发（使用 Java）的学习路线图，其中每个阶段都包含实践内容：
   Java 基础加强（1 周）：
@@ -186,10 +187,10 @@
     
     <item>
       <title>实时数据开发语言选型</title>
-      <link>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</link>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</link>
       <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</guid>
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80%E9%80%89%E5%9E%8B/</guid>
       <description>以下回答均由 GPT4 生成，后续会根据实际使用情况做更改
  问：做 Flink 实时流数据开发使用 Python 还是 Scala 更好？ 在实时流数据处理中，Apache Flink 提供了对 Java、Scala 和 Python 的支持。然而，在性能和生态系统方面，Scala 和 Java 通常比 Python 更优越。以下是关于在 Flink 实时流数据开发中选择 Python 和 Scala 的一些比较：</description>
     </item>

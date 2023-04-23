@@ -136,13 +136,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e3f689b51b001e9356ef560166596bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fcc4882eeda7c5a7d1de6bebae653cf8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.52ca4fc7e80e70422c17aa40416f1b4d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -399,7 +399,7 @@ Apr 18, 2023
       
       
       <li>
-        <a href="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" data-ctx="状态和容错" data-src="/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="internal-link">Flink 基本原理</a>
+        <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" data-ctx="大数据/状态和容错" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" class="internal-link">Flink 基本原理</a>
       </li>
       
       
