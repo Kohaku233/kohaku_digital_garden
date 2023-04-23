@@ -8,15 +8,6 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2023-04-22</title>
-      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
-      <description>安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
-    </item>
-    
-    <item>
       <title>2023-04-23</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-23/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
@@ -35,6 +26,15 @@
       <description> [!NOTE] Anuppuccin 需要安装不少插件以及自定义
  Callout 代表标注
 1 2 3 4 5  { &amp;#34;test&amp;#34;:&amp;#34;bob&amp;#34;, &amp;#34;sada&amp;#34;:&amp;#34;dasc&amp;#34;, }   </description>
+    </item>
+    
+    <item>
+      <title>2023-04-22</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
+      <description>安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
     </item>
     
     <item>

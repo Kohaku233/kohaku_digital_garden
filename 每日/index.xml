@@ -8,15 +8,6 @@
     <language>en</language>
     <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2023-04-22</title>
-      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
-      <description>安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
-    </item>
-    
-    <item>
       <title>2023-04-23</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-23/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
@@ -24,6 +15,15 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-23/</guid>
       <description>昨天熬夜主要搞了 Obsidian 的美化操作，将主题和字体设置到了自己舒服的程度，之前一直使用默认的界面感觉并不是很舒服，而且很多 markdown 展示 都不完善例如大标题只有大小没有颜色的区别让人分不清楚，同理加粗和斜体也是这样。之前觉得 obsidian 没有插件也能很好的使用，但是就目前的情况来说少了一些辅助插件去写文章就会时不时的多出一些心智负担，比如说经常忘记一些 md 语法像是插入图片、插入待办等等，这个时候有一个辅助 md 提示就会方便很多。所以有的时候插件并不是越少越好也不是越多越好，仅仅取决于供需关系。如果你希望写作时的负担小一些而且使用插件并不会大于不使用的心智负担就尽可能的去使用插件来为自己所用。
 关于 obsidian 使用的插件  [[Calendar]] Obsidian git [[Outliner]] [[Style Settings]]  </description>
+    </item>
+    
+    <item>
+      <title>2023-04-22</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
+      <description>安装了一个可以支持大部分自定义的主题：[[Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
     </item>
     
     <item>
