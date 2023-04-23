@@ -137,13 +137,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.e7cc9f122105b551e969ac8877205f3b.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.f33d56a30b884581515417a086521afb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.9b8d3862baf487983abe6c8e8b9e1f77.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.db2e12f83ca1818234c34e906b5c9a4e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
