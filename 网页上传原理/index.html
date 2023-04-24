@@ -136,13 +136,13 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.5e5ccc0a99cf99a1c9a3eb4d2edd2354.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.315a4eb10aa6c560647082e523805319.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.ee29fb13429df48aeb4c82a2ed8e0e93.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.55f7870c3abc91eac6b3588e60abec48.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

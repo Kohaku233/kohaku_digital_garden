@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.5e5ccc0a99cf99a1c9a3eb4d2edd2354.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.315a4eb10aa6c560647082e523805319.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.ee29fb13429df48aeb4c82a2ed8e0e93.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.55f7870c3abc91eac6b3588e60abec48.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -384,8 +384,18 @@ Apr 24, 2023
     
       
       
+      
+    
+      
+      
       <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-24/" data-ctx="亲爱的我包含杀意" data-src="/%E6%AF%8F%E6%97%A5/2023-04-24" class="internal-link">2023-04-24</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-24/" data-ctx="漫画/亲爱的我包含杀意" data-src="/%E6%AF%8F%E6%97%A5/2023-04-24" class="internal-link">2023-04-24</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD/" data-ctx="漫画/亲爱的我包含杀意" data-src="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD" class="internal-link">Anime 花园</a>
       </li>
       
       

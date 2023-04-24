@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.5e5ccc0a99cf99a1c9a3eb4d2edd2354.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.315a4eb10aa6c560647082e523805319.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.ee29fb13429df48aeb4c82a2ed8e0e93.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.55f7870c3abc91eac6b3588e60abec48.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,6 +319,22 @@
         <h1>All 漫画s</h1>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 24, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/%E6%BC%AB%E7%94%BB/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E5%8C%85%E5%90%AB%E6%9D%80%E6%84%8F/" class="internal-link" data-src="/%E6%BC%AB%E7%94%BB/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E5%8C%85%E5%90%AB%E6%9D%80%E6%84%8F/">亲爱的我包含杀意</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
