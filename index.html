@@ -141,7 +141,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.1c7f0daf30351ed5cdf34f4d457bc4f6.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.0a02b9f6fa7c178420c4b92ab01cca08.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -324,6 +324,7 @@
         <summary>Table of Contents</summary>
         <nav id="TableOfContents">
   <ol>
+    <li><a href="#tracker">Tracker</a></li>
     <li><a href="#关于我">关于我</a></li>
     <li><a href="#技能点">技能点</a></li>
   </ol>
@@ -350,48 +351,11 @@
   
   
   
-
+    
   
-
     
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
   
-
-  
-  
+    
   
 
   
@@ -433,6 +397,54 @@
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -444,7 +456,107 @@
 
 
 
-<a href="#关于我"><h2 id="关于我"><span class="hanchor" ariaLabel="Anchor"># </span>关于我</h2></a>
+
+<a href="#tracker"><h2 id="tracker"><span class="hanchor" ariaLabel="Anchor"># </span>Tracker</h2></a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">searchType: frontmatter
+</span></span><span class="line"><span class="cl">searchTarget: pomodoro
+</span></span><span class="line"><span class="cl">folder: 每日
+</span></span><span class="line"><span class="cl">startDate: -1w
+</span></span><span class="line"><span class="cl">endDate: 0d
+</span></span><span class="line"><span class="cl">fitPanelWidth: true
+</span></span><span class="line"><span class="cl">fixedScale: 0.5
+</span></span><span class="line"><span class="cl">line:
+</span></span><span class="line"><span class="cl">	title: 番茄钟
+</span></span><span class="line"><span class="cl">	yAxisLabel: 个数
+</span></span><span class="line"><span class="cl">	yAxisUnit: 25min/个
+</span></span><span class="line"><span class="cl">	xAxisLabel: D
+</span></span><span class="line"><span class="cl">	lineColor: yellow
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">searchType: frontmatter
+</span></span><span class="line"><span class="cl">searchTarget: pomodoro
+</span></span><span class="line"><span class="cl">folder: 每日
+</span></span><span class="line"><span class="cl">datasetName: 番茄钟
+</span></span><span class="line"><span class="cl">summary:
+</span></span><span class="line"><span class="cl">	template: &#34;平均番茄钟个数：{{average()}}&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">searchType: tag
+</span></span><span class="line"><span class="cl">searchTarget: tagName
+</span></span><span class="line"><span class="cl">folder: /
+</span></span><span class="line"><span class="cl">startDate:
+</span></span><span class="line"><span class="cl">endDate:
+</span></span><span class="line"><span class="cl">bar:
+</span></span><span class="line"><span class="cl">    title: &#34;Bar Chart&#34;
+</span></span><span class="line"><span class="cl">    xAxisLabel: Date
+</span></span><span class="line"><span class="cl">    yAxisLabel: Value
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">searchType: tag
+</span></span><span class="line"><span class="cl">searchTarget: tagName
+</span></span><span class="line"><span class="cl">folder: /
+</span></span><span class="line"><span class="cl">startDate:
+</span></span><span class="line"><span class="cl">endDate:
+</span></span><span class="line"><span class="cl">bar:
+</span></span><span class="line"><span class="cl">    title: &#34;Bar Chart&#34;
+</span></span><span class="line"><span class="cl">    xAxisLabel: Date
+</span></span><span class="line"><span class="cl">    yAxisLabel: Value
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#关于我"><h2 id="关于我"><span class="hanchor" ariaLabel="Anchor"># </span>关于我</h2></a>
 <p>我是 Kohaku，一名软件开发工程师。目前主要在做前端开发，会一点后端和数据开发，这是我的个人数字花园，用来记录平时的闪念笔记以及总结内容。</p>
 <a href="#技能点"><h2 id="技能点"><span class="hanchor" ariaLabel="Anchor"># </span>技能点</h2></a>
 <ul>
