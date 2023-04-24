@@ -15,6 +15,7 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-24/</guid>
       <description>看完了[[亲爱的我包含杀意]]，相当优秀的悬疑智斗漫画，最后的主题也一并升华。
 最近漫画看的实在有点太多了，基本都是悬疑智斗类，搞得自己在晚上的时候也有点疑神疑鬼的。看这类漫画的意义一方面是满足自己推理和猜测的好奇心另一方面是观察人性之恶到底能有多么没有底线。
+今天又装了 [[tracker]] 和 [[cMenu]] 两款插件，感觉对于我的 obsidian 而言又多了便捷性和统计性。
 工作  数据 DDH 迁移，审批通过后 PMS 打包 文档迁移完成，检查无语病无展示问题后提交到群里一起过一下 数据地图一批次功能自测提测 有时间继续开发重构 Flink 作业代码  生活  使用番茄钟来规范自己的专注时间 如交易一样，凡事都应该至少有一份粗略的计划，在什么时间段该干什么应该都是大概列好的，这样能得到什么的结果也是大概知道的，否则就如无头苍蝇般根本不知道明天未来会发生什么，进步也就因此停止  </description>
     </item>
     
@@ -321,6 +322,17 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
       
       <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/</guid>
       <description>准备工作  首先 fork 两个模板项目作为参考  </description>
+    </item>
+    
+    <item>
+      <title>2023-04-25</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</guid>
+      <description>[!NOTE] Daily Quote
+ Honesty is the best policy. — Benjamin Franklin
+   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。</description>
     </item>
     
   </channel>
