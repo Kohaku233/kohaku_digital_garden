@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.09259ac7b381f720df7edf58015d376a.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.590c008b6f723a2e01f08eb8b21571ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.8b4d0662a3c67f91881193dd6be2ee1c.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.814213cef428b8fc29d8cd257dd1098d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -674,7 +674,7 @@
 <p><a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE">实时数据 Flink 路线图</a></p>
 <p><a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86">Flink 基本原理</a></p>
 <a href="#兴趣爱好"><h3 id="兴趣爱好"><span class="hanchor" ariaLabel="Anchor"># </span>兴趣爱好</h3></a>
-<p><a href="/%E6%BC%AB%E7%94%BB" rel="noopener" class="internal-link" data-src="/%E6%BC%AB%E7%94%BB">漫画</a></p>
+<p><a href="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD" rel="noopener" class="internal-link" data-src="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD">Anime 花园</a></p>
 <p><a href="/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB" rel="noopener" class="internal-link" data-src="/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB">动画</a></p>
 <a href="#年度计划"><h3 id="年度计划"><span class="hanchor" ariaLabel="Anchor"># </span>年度计划</h3></a>
 <p><a href="/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92" rel="noopener" class="internal-link" data-src="/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92">年度计划</a></p>
