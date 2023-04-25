@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
+ DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。"
   />
   <title>
-    动画s
+    Kohaku
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,29 +317,115 @@
 
 
     <article>
-        <h1>All 动画s</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
+      
+      <p class="meta">
+        Last updated 
 Unknown
 
+ 
+          
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB/" class="internal-link" data-src="/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB/">动画</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>DataStream</code> 和 <code>DataStreamSource</code> 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。</p>
+<ol>
+<li>DataStream：</li>
+</ol>
+<p><code>DataStream</code> 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 <code>DataStream</code> 看作是一个流式处理作业的中间或最终结果。</p>
+<p><code>DataStream</code> 类提供了用于定义数据流处理作业的各种操作，如 <code>map</code>、<code>filter</code>、<code>keyBy</code>、<code>window</code> 等。通过对输入数据应用这些操作，可以构建复杂的 Flink 作业来处理和分析数据。</p>
+<ol start="2">
+<li>DataStreamSource：</li>
+</ol>
+<p><code>DataStreamSource</code> 是一个特殊类型的 <code>DataStream</code>，它表示 Flink 作业的输入数据。通常，当您从外部数据源（如 Kafka、文件、套接字等）读取数据时，会创建一个 <code>DataStreamSource</code> 实例。<code>DataStreamSource</code> 作为数据处理流水线的起点，随后可以在其上应用各种数据处理和分析操作。</p>
+<p>创建 <code>DataStreamSource</code> 的方法是通过 <code>StreamExecutionEnvironment</code> 的一些方法，如 <code>addSource</code>、<code>fromElements</code>、<code>fromCollection</code>、<code>readTextFile</code> 等。</p>
+<p>总结：</p>
+<ul>
+<li><strong><code>DataStream</code> 是 Flink 中表示无界数据集的抽象，用于在流处理作业中表示数据流。</strong></li>
+<li><strong><code>DataStreamSource</code> 是一种特殊类型的 <code>DataStream</code>，表示 Flink 作业的输入数据。它通常是从外部数据源（如 Kafka、文件、套接字等）读取的数据。</strong></li>
+</ul>
+<p>在 Flink 作业中，首先创建 <code>DataStreamSource</code> 来读取输入数据，然后对其应用各种 <code>DataStream</code> 操作来处理和分析数据。最后，将处理结果发送到外部存储系统或数据接收器。</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -353,6 +440,7 @@ Unknown
             </ul>
     </footer>
 </div>
+
 
 </div>
 </body>

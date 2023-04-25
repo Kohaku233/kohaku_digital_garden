@@ -8,6 +8,27 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-04-25</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</guid>
+      <description> [!NOTE] Daily Quote
+ Honesty is the best policy. — Benjamin Franklin
+   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。
+工作  PO 演示，功能提测 完善 Flink 代码，至少完成过滤方法、日期格式化、判断子户新增 完善数据集市规范文档  生活  Kafka 概念学习，对于基本概念有一个更为完整的认知 对交易计划和执行有一个更为全面的规则和认知 锻炼身体，恢复到正常饮食  </description>
+    </item>
+    
+    <item>
+      <title>Templater</title>
+      <link>https://www.kohaku.ink/Templater/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Templater/</guid>
+      <description>待完善……</description>
+    </item>
+    
+    <item>
       <title>2023-04-24</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-24/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
@@ -322,6 +343,16 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
       
       <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/</guid>
       <description>准备工作  首先 fork 两个模板项目作为参考  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kohaku.ink/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
+      <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
+ DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
     </item>
     
     <item>
