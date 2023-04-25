@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.320d945015b531d4c4a41b6ee0b7d7c2.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.c6564ec40e9ba27aee96aaa61106892f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.c81f326c647fb6fbf2659fba80627dfb.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.92a394619e0c4158e73316b3dceea59c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -712,7 +712,7 @@ Apr 25, 2023
 
             </p>
             <div class="desc">
-              <h3><a href="https://www.kohaku.ink/SQL/" class="internal-link" data-src="/SQL/">SQL</a></h3>
+              <h3><a href="https://www.kohaku.ink/Kafka/" class="internal-link" data-src="/Kafka/">Kafka</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -728,7 +728,7 @@ Apr 25, 2023
 
             </p>
             <div class="desc">
-              <h3><a href="https://www.kohaku.ink/Templater/" class="internal-link" data-src="/Templater/">Templater</a></h3>
+              <h3><a href="https://www.kohaku.ink/SQL/" class="internal-link" data-src="/SQL/">SQL</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

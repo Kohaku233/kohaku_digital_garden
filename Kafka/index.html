@@ -8,10 +8,13 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="Kafka 是一种分布式流处理平台，主要用于构建实时数据流管道和实时应用程序。它可以处理大量数据，并且具有高吞吐量、低延迟和可扩展性等特点。Kafka 由 LinkedIn 开发，后来成为 Apache 开源项目。
+基本概念   Producer：生产者是向 Kafka 发送消息的客户端，通常会将数据源中的数据发送到 Kafka。
+  Consumer：消费者是从 Kafka 接收消息的客户端，通常会对接收到的数据进行处理或存储。
+  Broker：Kafka [[集群和服务器|集群中的单个服务器]]，负责存储和处理消息。一个 Kafka 集群通常包含多个 Broker。"
   />
   <title>
-    教程
+    Kafka
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,31 +319,207 @@
 
 
     <article>
-        <h1>Tag: 教程</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 4, 2023
+      <h1>Kafka</h1>
+      <p class="meta">
+        Last updated 
+Apr 25, 2023
 
+ 
+          
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">obsidian本地内容同步到数字花园</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+</ul>
+
+      
+
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#基本概念">基本概念</a></li>
+        <li><a href="#应用场景">应用场景</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Kafka 是一种分布式流处理平台，主要用于构建实时数据流管道和实时应用程序。它可以处理大量数据，并且具有高吞吐量、低延迟和可扩展性等特点。Kafka 由 LinkedIn 开发，后来成为 Apache 开源项目。</p>
+<a href="#基本概念"><h3 id="基本概念"><span class="hanchor" ariaLabel="Anchor"># </span>基本概念</h3></a>
+<ol>
+<li>
+<p>Producer：生产者是向 Kafka 发送消息的客户端，通常会将数据源中的数据发送到 Kafka。</p>
+</li>
+<li>
+<p>Consumer：消费者是从 Kafka 接收消息的客户端，通常会对接收到的数据进行处理或存储。</p>
+</li>
+<li>
+<p>Broker：Kafka <a href="/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8" rel="noopener" class="internal-link" data-src="/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8">集群中的单个服务器</a>，负责存储和处理消息。一个 Kafka 集群通常包含多个 Broker。</p>
+</li>
+<li>
+<p>Topic：Kafka 中数据的类别或者种类，Producer 向特定的 Topic 发送消息，Consumer 则从 Topic 订阅消息。</p>
+</li>
+<li>
+<p>Partition：为了实现高并发和高吞吐量，Topic 被分为多个 Partition，每个 Partition 可以在不同的 Broker 上独立存储和处理。</p>
+</li>
+<li>
+<p>Offset：Partition 中的每条消息都有一个唯一的序号，称为 Offset。消费者通过 Offset 记录消费的位置，以便在断开连接后恢复消费。</p>
+</li>
+</ol>
+<a href="#应用场景"><h3 id="应用场景"><span class="hanchor" ariaLabel="Anchor"># </span>应用场景</h3></a>
+<ol>
+<li>
+<p>日志收集和处理：Kafka 可以作为一个日志收集系统，将分布式系统中的多个服务的日志统一收集，再进行实时或离线处理。</p>
+</li>
+<li>
+<p>消息队列：Kafka 可用作消息队列，实现应用程序之间的解耦合和数据交换。</p>
+</li>
+<li>
+<p>实时数据处理：Kafka 可以用于实时数据处理，例如实时监控、实时推荐等场景。</p>
+</li>
+<li>
+<p>数据同步：Kafka 可以实现不同数据存储系统间的数据同步，例如将 OLTP 数据库的数据同步到数据仓库。</p>
+</li>
+<li>
+<p>事件驱动架构：Kafka 可以作为事件驱动架构的基础设施，用于传输和处理业务事件。</p>
+</li>
+</ol>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-25/" data-ctx="Kafka" data-src="/%E6%AF%8F%E6%97%A5/2023-04-25" class="internal-link">2023-04-25</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -355,6 +534,7 @@ Apr 4, 2023
             </ul>
     </footer>
 </div>
+
 
 </div>
 </body>
