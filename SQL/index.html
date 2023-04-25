@@ -8,10 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="安装了一个可以支持大部分自定义的主题：[[obsidian/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。"
+    content="ROW_NUMBER() OVER 在 SQL 查询中，当使用 PARTITION BY field1, field2 时，实际上是根据 field1 和 field2 的值对数据进行分组。这里的组合并不是将两个字段的值直接拼接，而是将具有相同 field1 和 field2 值的行分到同一个分区。
+例如，假设有以下表格数据：
+   id field1 field2 field3     1 A X 100   2 A X 200   3 A Y 300   4 B X 400   5 B Y 500   6 B Y 600    在这个表格中，如果你使用 PARTITION BY field1, field2，数据会被划分为以下分区："
   />
   <title>
-    2023-04-22
+    SQL
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -316,10 +318,10 @@
 
 
     <article>
-      <h1>2023-04-22</h1>
+      <h1>SQL</h1>
       <p class="meta">
         Last updated 
-Apr 22, 2023
+Apr 25, 2023
 
  
           
@@ -331,6 +333,21 @@ Apr 22, 2023
 
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#row_number-over">ROW_NUMBER() OVER</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -347,48 +364,6 @@ Apr 22, 2023
 
 
 
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
 
 
 
@@ -400,8 +375,121 @@ Apr 22, 2023
 
 
 
-
-<p>安装了一个可以支持大部分自定义的主题：<a href="/obsidian/Anuppuccin" rel="noopener" class="internal-link" data-src="/obsidian/Anuppuccin">Anuppuccin</a>，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</p>
+<a href="#row_number-over"><h3 id="row_number-over"><span class="hanchor" ariaLabel="Anchor"># </span>ROW_NUMBER() OVER</h3></a>
+<p>在 SQL 查询中，当使用 <code>PARTITION BY field1, field2</code> 时，实际上是根据 <code>field1</code> 和 <code>field2</code> 的值对数据进行分组。这里的组合并不是将两个字段的值直接拼接，而是将具有相同 <code>field1</code> 和 <code>field2</code> 值的行分到同一个分区。</p>
+<p>例如，假设有以下表格数据：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>field1</th>
+<th>field2</th>
+<th>field3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>X</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A</td>
+<td>X</td>
+<td>200</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A</td>
+<td>Y</td>
+<td>300</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B</td>
+<td>X</td>
+<td>400</td>
+</tr>
+<tr>
+<td>5</td>
+<td>B</td>
+<td>Y</td>
+<td>500</td>
+</tr>
+<tr>
+<td>6</td>
+<td>B</td>
+<td>Y</td>
+<td>600</td>
+</tr>
+</tbody>
+</table>
+<p>在这个表格中，如果你使用 <code>PARTITION BY field1, field2</code>，数据会被划分为以下分区：</p>
+<ol>
+<li>分区 1：包含具有 field1 = A 和 field2 = X 的行 (id: 1, 2)</li>
+<li>分区 2：包含具有 field1 = A 和 field2 = Y 的行 (id: 3)</li>
+<li>分区 3：包含具有 field1 = B 和 field2 = X 的行 (id: 4)</li>
+<li>分区 4：包含具有 field1 = B 和 field2 = Y 的行 (id: 5, 6)</li>
+</ol>
+<p>在每个分区内，可以对其他字段（如 <code>field3</code>）进行排序并分配行号。例如，如果你使用 <code>ROW_NUMBER() OVER (PARTITION BY field1, field2 ORDER BY field3 DESC)</code>，查询结果将如下：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>field1</th>
+<th>field2</th>
+<th>field3</th>
+<th>row_number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>A</td>
+<td>X</td>
+<td>200</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>X</td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A</td>
+<td>Y</td>
+<td>300</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B</td>
+<td>X</td>
+<td>400</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>B</td>
+<td>Y</td>
+<td>600</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>B</td>
+<td>Y</td>
+<td>500</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>这里可以看到，每个分区内的行都根据 <code>field3</code> 的值进行了降序排序，并分配了唯一的行号。</p>
 
 
     </article>
@@ -419,10 +507,20 @@ Apr 22, 2023
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-25/" data-ctx="SQL" data-src="/%E6%AF%8F%E6%97%A5/2023-04-25" class="internal-link">2023-04-25</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

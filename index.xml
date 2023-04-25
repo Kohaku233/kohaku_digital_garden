@@ -13,10 +13,20 @@
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</guid>
-      <description> [!NOTE] Daily Quote
+      <description>[!NOTE] Daily Quote
  Honesty is the best policy. — Benjamin Franklin
-   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。
-工作  PO 演示，功能提测 完善 Flink 代码，至少完成过滤方法、日期格式化、判断子户新增 完善数据集市规范文档  生活  Kafka 概念学习，对于基本概念有一个更为完整的认知 对交易计划和执行有一个更为全面的规则和认知 锻炼身体，恢复到正常饮食  </description>
+   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。 [[SQL]]</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://www.kohaku.ink/SQL/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/SQL/</guid>
+      <description>ROW_NUMBER() OVER 在 SQL 查询中，当使用 PARTITION BY field1, field2 时，实际上是根据 field1 和 field2 的值对数据进行分组。这里的组合并不是将两个字段的值直接拼接，而是将具有相同 field1 和 field2 值的行分到同一个分区。
+例如，假设有以下表格数据：
+   id field1 field2 field3     1 A X 100   2 A X 200   3 A Y 300   4 B X 400   5 B Y 500   6 B Y 600    在这个表格中，如果你使用 PARTITION BY field1, field2，数据会被划分为以下分区：</description>
     </item>
     
     <item>
