@@ -136,13 +136,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.baa692400604b40b1f9b84014c297b70.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.6c1e6c591d3ccf69d5c5a23a8a35d802.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.1b67aaf8c7841c40bf634d8110863f1d.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fafa6a5740af01784a5f912d97f176a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -477,14 +477,14 @@ Apr 26, 2023
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 财资云待授权功能开发联调</li>
 <li><input checked="" disabled="" type="checkbox"> 报告图片替换功能开发联调</li>
-<li><input disabled="" type="checkbox"> 商机 React 项目重构，拉会说明重构流程及项目结构，申请码云公共仓库以及构建流水线</li>
+<li><input checked="" disabled="" type="checkbox"> 商机 React 项目重构，拉会说明重构流程及项目结构，申请码云公共仓库以及构建流水线</li>
 </ul>
 <a href="#生活"><h3 id="生活"><span class="hanchor" ariaLabel="Anchor"># </span>生活</h3></a>
 <ul>
-<li><input disabled="" type="checkbox"> 早睡早起（最多1点左右睡觉，每天2-3点睡觉有点影响第二天的安排）</li>
-<li><input disabled="" type="checkbox"> 锻炼身体，控制饮食</li>
-<li><input disabled="" type="checkbox"> <a href="/Kafka" rel="noopener" class="internal-link" data-src="/Kafka">Kafka</a> 概念继续学习，上手直接实操建立一个 Kafka 集群，然后作为生产者往集群中添加数据作为消费者消费集群中的数据</li>
-<li><input disabled="" type="checkbox"> 整理下 obsidian 插件，对所使用的插件做个大体的介绍</li>
+<li><input checked="" disabled="" type="checkbox"> 早睡早起（最多1点左右睡觉，每天2-3点睡觉有点影响第二天的安排）</li>
+<li><input checked="" disabled="" type="checkbox"> 锻炼身体，控制饮食</li>
+<li><input disabled="" type="checkbox"> <del><a href="/Kafka" rel="noopener" class="internal-link" data-src="/Kafka">Kafka</a> 概念继续学习，上手直接实操建立一个 Kafka 集群，然后作为生产者往集群中添加数据作为消费者消费集群中的数据</del> 未完成，时间用来看漫画了</li>
+<li><input disabled="" type="checkbox"> <del>整理下 obsidian 插件，对所使用的插件做个大体的介绍</del> 未完成，时间用来看漫画了</li>
 </ul>
 <p>🍅 星期三, 四月 26 2023, 10:00 上午
 🍅 星期三, 四月 26 2023, 10:30 上午

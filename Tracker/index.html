@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.baa692400604b40b1f9b84014c297b70.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.6c1e6c591d3ccf69d5c5a23a8a35d802.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.1b67aaf8c7841c40bf634d8110863f1d.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fafa6a5740af01784a5f912d97f176a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -430,6 +430,36 @@ Unknown
 </span></span><span class="line"><span class="cl">    title: &#34;Bar Chart&#34;
 </span></span><span class="line"><span class="cl">    xAxisLabel: Date
 </span></span><span class="line"><span class="cl">    yAxisLabel: Value
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">searchType: text
+</span></span><span class="line"><span class="cl">searchTarget: 🍅
+</span></span><span class="line"><span class="cl">folder: /每日
+</span></span><span class="line"><span class="cl">startDate: -1w
+</span></span><span class="line"><span class="cl">endDate: 0d
+</span></span><span class="line"><span class="cl">fitPanelWidth: false
+</span></span><span class="line"><span class="cl">fixedScale: 1.3
+</span></span><span class="line"><span class="cl">line:
+</span></span><span class="line"><span class="cl">	title: 番茄钟
+</span></span><span class="line"><span class="cl">	yAxisLabel: 个数
+</span></span><span class="line"><span class="cl">	yAxisUnit: 25min/个
+</span></span><span class="line"><span class="cl">	lineColor: yellow
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
