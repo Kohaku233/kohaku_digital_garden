@@ -8,6 +8,17 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-04-26</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</guid>
+      <description> [!NOTE] Daily Quote
+ He that is giddy thinks the world turns round. — William Shakespeare
+   工作  财资云待授权功能开发联调 报告图片替换功能开发联调 商机 React 项目重构，拉会说明重构流程及项目结构，申请码云公共仓库以及构建流水线  生活  早睡早起（最多1点左右睡觉，每天2-3点睡觉有点影响第二天的安排） 锻炼身体，控制饮食 [[Kafka]] 概念继续学习，上手直接实操建立一个 Kafka 集群，然后作为生产者往集群中添加数据作为消费者消费集群中的数据 整理下 obsidian 插件，对所使用的插件做个大体的介绍  </description>
+    </item>
+    
+    <item>
       <title>2023-04-25</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
