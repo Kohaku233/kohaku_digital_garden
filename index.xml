@@ -13,9 +13,19 @@
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</guid>
-      <description> [!NOTE] Daily Quote
+      <description>[!NOTE] Daily Quote
  He that is giddy thinks the world turns round. — William Shakespeare
-   工作  财资云待授权功能开发联调 报告图片替换功能开发联调 商机 React 项目重构，拉会说明重构流程及项目结构，申请码云公共仓库以及构建流水线  生活  早睡早起（最多1点左右睡觉，每天2-3点睡觉有点影响第二天的安排） 锻炼身体，控制饮食 [[Kafka]] 概念继续学习，上手直接实操建立一个 Kafka 集群，然后作为生产者往集群中添加数据作为消费者消费集群中的数据 整理下 obsidian 插件，对所使用的插件做个大体的介绍  </description>
+   [[git]]</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://www.kohaku.ink/git/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/git/</guid>
+      <description>经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
+ 首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    </description>
     </item>
     
     <item>
