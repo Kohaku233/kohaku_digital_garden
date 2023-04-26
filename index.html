@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.6c1e6c591d3ccf69d5c5a23a8a35d802.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.d9ec88c8597232ef8cb151f99a9a2a21.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fafa6a5740af01784a5f912d97f176a3.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4e5d8758a414ac3840474fee36ec5594.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -722,7 +722,7 @@ Apr 26, 2023
 
             </p>
             <div class="desc">
-              <h3><a href="https://www.kohaku.ink/git/" class="internal-link" data-src="/git/">git</a></h3>
+              <h3><a href="https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="internal-link" data-src="/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">git</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

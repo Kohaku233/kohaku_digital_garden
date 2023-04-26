@@ -15,7 +15,7 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</guid>
       <description>[!NOTE] Daily Quote
  He that is giddy thinks the world turns round. — William Shakespeare
-   [[git]]</description>
+   [[git 常见问题]]</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</guid>
       <description>[!NOTE] Daily Quote
  Honesty is the best policy. — Benjamin Franklin
-   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。 [[SQL]]</description>
+   根据 [[obsidian 插件/Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。 [[SQL]]</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
-      <description>安装了一个可以支持大部分自定义的主题：[[obsidian/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
+      <description>安装了一个可以支持大部分自定义的主题：[[obsidian 插件/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
     </item>
     
     <item>

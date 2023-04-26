@@ -8,11 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
- 首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    "
+    content=""
   />
   <title>
-    git
+    Obsidian 插件s
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -135,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.6c1e6c591d3ccf69d5c5a23a8a35d802.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.d9ec88c8597232ef8cb151f99a9a2a21.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fafa6a5740af01784a5f912d97f176a3.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4e5d8758a414ac3840474fee36ec5594.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,126 +316,45 @@
 
 
     <article>
-      <h1>git</h1>
-      <p class="meta">
-        Last updated 
-Apr 26, 2023
-
- 
-          
-
-      </p>
-      <ul class="tags">
-    
-</ul>
-
-      
+        <h1>All Obsidian 插件s</h1>
+        
+        <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 25, 2023
 
 
-      
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Templater/" class="internal-link" data-src="/obsidian-%E6%8F%92%E4%BB%B6/Templater/">Templater</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 23, 2023
 
 
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Anuppuccin/" class="internal-link" data-src="/obsidian-%E6%8F%92%E4%BB%B6/Anuppuccin/">Anuppuccin</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li></ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：</p>
-<ol>
-<li>首先添加远程仓库 <code>git remote add origin 远程仓库链接</code></li>
-<li>fetch 远程仓库 <code>git fetch origin</code></li>
-<li>如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去</li>
-<li>如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支
-<ol>
-<li><code>git checkout -D 需要删除分支的名字</code></li>
-<li><code>git checkout -b 名字不一样的分支</code></li>
-</ol>
-</li>
-<li>然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数
-<ol>
-<li><code>git merge 名字不一样的分支 --allow-unrelated-histories</code></li>
-<li>然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了</li>
-</ol>
-</li>
-</ol>
-
-
+        
     </article>
-    <hr/>
-
-
-<div class="page-end" id="footer">
-    <div class="backlinks-container">
-        <h3>Backlinks</h3>
-<ul class="backlinks">
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-26/" data-ctx="git" data-src="/%E6%AF%8F%E6%97%A5/2023-04-26" class="internal-link">2023-04-26</a>
-      </li>
-      
-      
-      
-</ul>
-
-    </div>
-    <div>
-        <script
-  async
-  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
-  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
-  crossorigin="anonymous"
-></script>
-<h3>Interactive Graph</h3>
-<div id="graph-container"></div>
-<style>
-  :root {
-    --g-node: var(--secondary);
-    --g-node-active: var(--primary);
-    --g-node-inactive: var(--visited);
-    --g-link: var(--outlinegray);
-    --g-link-active: #5a7282;
-  }
-</style>
-
-<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
-
-    </div>
-</div>
-
-
-
 
 
 
@@ -451,7 +369,6 @@ Apr 26, 2023
             </ul>
     </footer>
 </div>
-
 
 </div>
 </body>

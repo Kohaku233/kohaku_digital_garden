@@ -8,11 +8,14 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
- DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。"
+    content="集群（Cluster）和服务器（Server）是计算机网络和分布式系统领域的两个重要概念。它们之间的主要区别在于规模、功能和用途。
+集群（Cluster）：   规模：集群通常由多台计算机（服务器）组成，这些计算机共同协作来完成某个任务或提供某种服务。
+  功能：集群的主要目的是通过分布式计算来提高性能、可扩展性和可靠性。集群中的多台计算机可以共享计算和存储资源，实现负载均衡和故障切换。
+  用途：集群广泛应用于大数据处理、高性能计算、高可用服务等领域，例如 Hadoop 集群、Kubernetes 集群等。
+  服务器（Server）：   规模：服务器通常是指一台计算机，它具有较高的性能和可靠性，用于提供某种服务。"
   />
   <title>
-    Kohaku
+    集群和服务器
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -135,13 +138,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.6c1e6c591d3ccf69d5c5a23a8a35d802.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.d9ec88c8597232ef8cb151f99a9a2a21.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.fafa6a5740af01784a5f912d97f176a3.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4e5d8758a414ac3840474fee36ec5594.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,10 +320,10 @@
 
 
     <article>
-      
+      <h1>集群和服务器</h1>
       <p class="meta">
         Last updated 
-Unknown
+Apr 25, 2023
 
  
           
@@ -332,6 +335,22 @@ Unknown
 
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#集群cluster">集群（Cluster）：</a></li>
+        <li><a href="#服务器server">服务器（Server）：</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -359,23 +378,32 @@ Unknown
 
 
 
-<p><code>DataStream</code> 和 <code>DataStreamSource</code> 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。</p>
+<p>集群（Cluster）和服务器（Server）是计算机网络和分布式系统领域的两个重要概念。它们之间的主要区别在于规模、功能和用途。</p>
+<a href="#集群cluster"><h3 id="集群cluster"><span class="hanchor" ariaLabel="Anchor"># </span>集群（Cluster）：</h3></a>
 <ol>
-<li>DataStream：</li>
+<li>
+<p>规模：<strong>集群通常由多台计算机（服务器）组成</strong>，这些计算机共同协作来完成某个任务或提供某种服务。</p>
+</li>
+<li>
+<p>功能：集群的主要目的是通过分布式计算来提高性能、可扩展性和可靠性。集群中的多台计算机可以共享计算和存储资源，实现负载均衡和故障切换。</p>
+</li>
+<li>
+<p>用途：集群广泛应用于大数据处理、高性能计算、高可用服务等领域，例如 Hadoop 集群、Kubernetes 集群等。</p>
+</li>
 </ol>
-<p><code>DataStream</code> 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 <code>DataStream</code> 看作是一个流式处理作业的中间或最终结果。</p>
-<p><code>DataStream</code> 类提供了用于定义数据流处理作业的各种操作，如 <code>map</code>、<code>filter</code>、<code>keyBy</code>、<code>window</code> 等。通过对输入数据应用这些操作，可以构建复杂的 Flink 作业来处理和分析数据。</p>
-<ol start="2">
-<li>DataStreamSource：</li>
+<a href="#服务器server"><h3 id="服务器server"><span class="hanchor" ariaLabel="Anchor"># </span>服务器（Server）：</h3></a>
+<ol>
+<li>
+<p>规模：服务器通常是指一台计算机，它具有较高的性能和可靠性，用于提供某种服务。</p>
+</li>
+<li>
+<p>功能：服务器的主要功能是响应客户端的请求，处理业务逻辑并返回结果。服务器可以独立运行，也可以作为集群中的一个节点。</p>
+</li>
+<li>
+<p>用途：服务器广泛应用于网络服务、数据库、文件存储等领域，例如 Web 服务器、数据库服务器等。</p>
+</li>
 </ol>
-<p><code>DataStreamSource</code> 是一个特殊类型的 <code>DataStream</code>，它表示 Flink 作业的输入数据。通常，当您从外部数据源（如 Kafka、文件、套接字等）读取数据时，会创建一个 <code>DataStreamSource</code> 实例。<code>DataStreamSource</code> 作为数据处理流水线的起点，随后可以在其上应用各种数据处理和分析操作。</p>
-<p>创建 <code>DataStreamSource</code> 的方法是通过 <code>StreamExecutionEnvironment</code> 的一些方法，如 <code>addSource</code>、<code>fromElements</code>、<code>fromCollection</code>、<code>readTextFile</code> 等。</p>
-<p>总结：</p>
-<ul>
-<li><strong><code>DataStream</code> 是 Flink 中表示无界数据集的抽象，用于在流处理作业中表示数据流。</strong></li>
-<li><strong><code>DataStreamSource</code> 是一种特殊类型的 <code>DataStream</code>，表示 Flink 作业的输入数据。它通常是从外部数据源（如 Kafka、文件、套接字等）读取的数据。</strong></li>
-</ul>
-<p>在 Flink 作业中，首先创建 <code>DataStreamSource</code> 来读取输入数据，然后对其应用各种 <code>DataStream</code> 操作来处理和分析数据。最后，将处理结果发送到外部存储系统或数据接收器。</p>
+<p>总结：集群和服务器的主要区别在于规模，集群是由多台计算机组成，它们共同协作来提供服务，而服务器通常是指一台计算机，独立地提供服务。集群的目的是提高性能、可扩展性和可靠性，而服务器的目的是提供特定的服务。</p>
 
 
     </article>
@@ -393,10 +421,20 @@ Unknown
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/%E6%95%99%E7%A8%8B/Kafka/" data-ctx="集群中的单个服务器" data-src="/%E6%95%99%E7%A8%8B/Kafka" class="internal-link">Kafka</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

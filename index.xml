@@ -15,16 +15,16 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</guid>
       <description>[!NOTE] Daily Quote
  He that is giddy thinks the world turns round. — William Shakespeare
-   [[git]]</description>
+   [[git 常见问题]]</description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://www.kohaku.ink/git/</link>
+      <link>https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/git/</guid>
-      <description>经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
+      <guid>https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>远程仓库和本地仓库 commit 信息不一致 经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
  首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    </description>
     </item>
     
@@ -36,19 +36,19 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-25/</guid>
       <description>[!NOTE] Daily Quote
  Honesty is the best policy. — Benjamin Franklin
-   根据 [[Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。 [[SQL]]</description>
+   根据 [[obsidian 插件/Templater]] 插件重新生成了模板文档，并且给主要的模板文档添加了快捷键。 [[SQL]]</description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>https://www.kohaku.ink/Kafka/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Kafka/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Kafka/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Kafka/</guid>
       <description>Kafka 是一种分布式流处理平台，主要用于构建实时数据流管道和实时应用程序。它可以处理大量数据，并且具有高吞吐量、低延迟和可扩展性等特点。Kafka 由 LinkedIn 开发，后来成为 Apache 开源项目。
 基本概念   Producer：生产者是向 Kafka 发送消息的客户端，通常会将数据源中的数据发送到 Kafka。
   Consumer：消费者是从 Kafka 接收消息的客户端，通常会对接收到的数据进行处理或存储。
-  Broker：Kafka [[集群和服务器|集群中的单个服务器]]，负责存储和处理消息。一个 Kafka 集群通常包含多个 Broker。</description>
+  Broker：Kafka [[教程/集群和服务器|集群中的单个服务器]]，负责存储和处理消息。一个 Kafka 集群通常包含多个 Broker。</description>
     </item>
     
     <item>
@@ -64,19 +64,19 @@
     
     <item>
       <title>Templater</title>
-      <link>https://www.kohaku.ink/Templater/</link>
+      <link>https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Templater/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Templater/</guid>
+      <guid>https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Templater/</guid>
       <description>待完善……</description>
     </item>
     
     <item>
       <title>集群和服务器</title>
-      <link>https://www.kohaku.ink/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/%E9%9B%86%E7%BE%A4%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>集群（Cluster）和服务器（Server）是计算机网络和分布式系统领域的两个重要概念。它们之间的主要区别在于规模、功能和用途。
 集群（Cluster）：   规模：集群通常由多台计算机（服务器）组成，这些计算机共同协作来完成某个任务或提供某种服务。
   功能：集群的主要目的是通过分布式计算来提高性能、可扩展性和可靠性。集群中的多台计算机可以共享计算和存储资源，实现负载均衡和故障切换。
@@ -117,10 +117,10 @@
     
     <item>
       <title>Anuppuccin</title>
-      <link>https://www.kohaku.ink/obsidian/Anuppuccin/</link>
+      <link>https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Anuppuccin/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/obsidian/Anuppuccin/</guid>
+      <guid>https://www.kohaku.ink/obsidian-%E6%8F%92%E4%BB%B6/Anuppuccin/</guid>
       <description> [!NOTE] Anuppuccin 需要安装不少插件以及自定义
  插件 </description>
     </item>
@@ -131,7 +131,7 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-22/</guid>
-      <description>安装了一个可以支持大部分自定义的主题：[[obsidian/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
+      <description>安装了一个可以支持大部分自定义的主题：[[obsidian 插件/Anuppuccin]]，通过 Style Setting 插件来自定义大部分样式包括主题色、MD 文件样式、Layout 样式等等，可以说有非常高的自定义能力了，如果后续有时间可以出一个教程来使用这款主题。</description>
     </item>
     
     <item>
@@ -403,21 +403,21 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
     
     <item>
       <title></title>
-      <link>https://www.kohaku.ink/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kohaku.ink/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
-      <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
- DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://www.kohaku.ink/Tracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/Tracker/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13  searchType: frontmatter searchTarget: pomodoro folder: 每日 startDate: -1w endDate: 0d fitPanelWidth: false fixedScale: 1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
+      <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
+ DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
     </item>
     
     <item>
