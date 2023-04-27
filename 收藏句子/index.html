@@ -8,9 +8,9 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=" 当你停止创造，你的才能就不再重要，你所拥有的只剩下你的品味。而品味会裹挟你，让你排斥他人，变得狭隘。所以，要创造。
+    content="当你停止创造，你的才能就不再重要，你所拥有的只剩下你的品味。而品味会裹挟你，让你排斥他人，变得狭隘。所以，要创造。
   Ars longa, vita brevis 艺术长久，生命短暂
- "
+  你必須從客戶體驗開始，逆向思考應用技術；而不是從技術開始，然後試圖賣給你的客戶。 You&rsquo;ve got to start with the customer experience and work backwards to the technology."
   />
   <title>
     收藏句子
@@ -136,13 +136,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.d9ec88c8597232ef8cb151f99a9a2a21.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.1b6ef6ae1ccc877e9255cd5a4392e11a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.0142d2ddd305a0c868e1a70e17bf1406.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.71856e8e60533a59321824e92de4ca6f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -366,6 +366,9 @@ Apr 19, 2023
 <blockquote>
 <p>Ars longa, vita brevis
 艺术长久，生命短暂</p>
+</blockquote>
+<blockquote>
+<p>你必須從客戶體驗開始，逆向思考應用技術；而不是從技術開始，然後試圖賣給你的客戶。 You&rsquo;ve got to start with the customer experience and work backwards to the technology. You can&rsquo;t start with the technology and try to figure out where you&rsquo;re gonna try to sell it. - Steve Jobs</p>
 </blockquote>
 
 
