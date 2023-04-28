@@ -8,10 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="待完善……"
+    content=""
   />
   <title>
-    Templater
+    Obsidians
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.1b6ef6ae1ccc877e9255cd5a4392e11a.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.bbfad1a5f36e2d92f84eae03f1703315.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.f7542b666c75bcc50a695b7a9f3b19d3.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.e562e4ab4c46161925029fc96595d5e7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -316,109 +316,45 @@
 
 
     <article>
-      <h1>Templater</h1>
-      <p class="meta">
-        Last updated 
+        <h1>All Obsidians</h1>
+        
+        <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Apr 25, 2023
 
- 
-          
 
-      </p>
-      <ul class="tags">
-    
-</ul>
-
-      
-
-
-      
-
-
-
-
-
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/obsidian/Templater/" class="internal-link" data-src="/obsidian/Templater/">Templater</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 23, 2023
 
 
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/obsidian/Anuppuccin/" class="internal-link" data-src="/obsidian/Anuppuccin/">Anuppuccin</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li></ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>待完善……</p>
-
-
+        
     </article>
-    <hr/>
-
-
-<div class="page-end" id="footer">
-    <div class="backlinks-container">
-        <h3>Backlinks</h3>
-<ul class="backlinks">
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-25/" data-ctx="obsidian 插件/Templater" data-src="/%E6%AF%8F%E6%97%A5/2023-04-25" class="internal-link">2023-04-25</a>
-      </li>
-      
-      
-      
-</ul>
-
-    </div>
-    <div>
-        <script
-  async
-  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
-  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
-  crossorigin="anonymous"
-></script>
-<h3>Interactive Graph</h3>
-<div id="graph-container"></div>
-<style>
-  :root {
-    --g-node: var(--secondary);
-    --g-node-active: var(--primary);
-    --g-node-inactive: var(--visited);
-    --g-link: var(--outlinegray);
-    --g-link-active: #5a7282;
-  }
-</style>
-
-<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
-
-    </div>
-</div>
-
-
-
 
 
 
@@ -433,7 +369,6 @@ Apr 25, 2023
             </ul>
     </footer>
 </div>
-
 
 </div>
 </body>

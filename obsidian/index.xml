@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obsidians on Kohaku</title>
+    <link>https://www.kohaku.ink/obsidian/</link>
+    <description>Recent content in Obsidians on Kohaku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Templater</title>
+      <link>https://www.kohaku.ink/obsidian/Templater/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/obsidian/Templater/</guid>
+      <description>待完善……</description>
+    </item>
+    
+    <item>
+      <title>Anuppuccin</title>
+      <link>https://www.kohaku.ink/obsidian/Anuppuccin/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/obsidian/Anuppuccin/</guid>
+      <description> [!NOTE] Anuppuccin 需要安装不少插件以及自定义
+ 插件 </description>
+    </item>
+    
+  </channel>
+</rss>
