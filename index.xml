@@ -8,6 +8,48 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-04-29</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-29/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-29/</guid>
+      <description>[!NOTE] Daily Quote
+ The journey of a thousand miles begins with one step. — Laozi
+   生活  整理房间，打扫房间 剪指甲，整理仪容 研究 readwise 的使用，平时经常会看一些文章和推，收藏后及时总结是很好 读书《科技想要什么》 开始编写 bilibili 根据 TAG 或者视频内容自动评论系统 自己做中饭和午饭，中饭决定吃土豆肥牛+鸡腿肉+上海青，晚饭吃牛排，锻炼身体  🍅 星期六, 四月 29 2023, 2:39 下午 🍅 星期六, 四月 29 2023, 11:26 晚上</description>
+    </item>
+    
+    <item>
+      <title>FFmpeg</title>
+      <link>https://www.kohaku.ink/FFmpeg/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/FFmpeg/</guid>
+      <description>1 2 3 4 5  # MP4 文件转为 AVI 文件 ffmpeg -i input.mp4 output.avi # M4A 音频转为 FLAC 音频 ffmpeg -i input.</description>
+    </item>
+    
+    <item>
+      <title>Youtube 视频下载</title>
+      <link>https://www.kohaku.ink/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11  # 单独下载音频 yt-dlp -f &amp;#34;bestaudio[ext=m4a]&amp;#34; 视频链接 # 音频下载 m4a 转为 mp3 格式 yt-dlp -f &amp;#34;bestaudio[ext=m4a]&amp;#34; --extract-audio --audio-format mp3 --audio-quality 0 视频链接 # 视频下载最高质量 yt-dlp &amp;#34;bestvideo+bestaudio/best&amp;#34; 视频链接 # 选择视频和音频质量，会先展示不同种类的 id，然后根据 id 下载对应音视频文件就好 yt-dlp -F 视频链接   </description>
+    </item>
+    
+    <item>
+      <title>有趣的小知识</title>
+      <link>https://www.kohaku.ink/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/</guid>
+      <description>[!NOTE] Question
+ 理发店外的蓝白红转机的来源是什么
+蓝白红的理发店旋转柱（barber pole）起源于中世纪的欧洲。在那时，理发师不仅剪发，还承担了一些外科手术的职责，例如拔牙、血脉放血等。这些职责被称为“理发外科医生”。蓝白红的旋转柱象征着他们的这些职责。
+其中，红色代表血液，因为在中世纪，放血疗法（bloodletting）是一种常见的治疗方式。白色代表绷带，用于包扎伤口。蓝色可能源于美国独立战争后期，蓝色被添加以表示美国的颜色。这三种颜色交织在一起，形成了今天理发店前的蓝白红旋转柱标志。
+如今，尽管理发师的工作已经与外科手术完全分离，但这个传统的标志仍然沿用至今，成为了理发店的象征。</description>
+    </item>
+    
+    <item>
       <title>2023-04-28</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-28/</link>
       <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
