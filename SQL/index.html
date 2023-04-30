@@ -60,8 +60,11 @@
   
   
   
+    
+    
   
-  <link href="https://www.kohaku.ink/styles.46998dccb5c9217023b11b50e8b361ef.min.css" rel="stylesheet" />
+  
+  <link href="https://www.kohaku.ink/styles.2e199a69b46898aa8b90d14c0bafdfc1.min.css" rel="stylesheet" />
 
   
   <link href="https://www.kohaku.ink/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -114,6 +117,9 @@
   
 
   
+  
+  <script defer src="https://www.kohaku.ink/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js"></script>
+  
 
   
    
@@ -142,7 +148,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.1be580e5d6bf685510e6c78d58d40627.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b9ff621937985b8093150f72cb145d8e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -165,6 +171,7 @@
       addTitleToCodeBlocks();
       
 
+      addCollapsibleCallouts();
       
 
       
@@ -369,6 +376,18 @@ Apr 25, 2023
 
 
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
