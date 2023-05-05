@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 setx WORKON_HOME D:\virtual_environments 设置系统环境变量 mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突 删除某个虚拟环境 rmvirtualenv myenv  "
+    content="如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 2. setx WORKON_HOME D:\virtual_environments 设置系统环境变量 3. mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突 删除某个虚拟环境 rmvirtualenv myenv  "
   />
   <title>
     python 虚拟环境
@@ -146,7 +146,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.e8c4533f16c82c8d89728360848ead5c.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.7e1fb94b12aba1b3bd116118b03e93a6.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -394,9 +394,9 @@ May 5, 2023
 
 <a href="#如何创建虚拟环境win"><h3 id="如何创建虚拟环境win"><span class="hanchor" ariaLabel="Anchor"># </span>如何创建虚拟环境(win)</h3></a>
 <ol>
-<li><code>pip install virtualenvwrapper-win</code> 安装虚拟环境管理工具，统一设置虚拟环境存放位置</li>
-<li><code>setx WORKON_HOME D:\virtual_environments</code> 设置系统环境变量</li>
-<li><code>mkvirtualenv myenv</code> 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹</li>
+<li><code>pip install virtualenvwrapper-win</code> 安装虚拟环境管理工具，统一设置虚拟环境存放位置
+2. <code>setx WORKON_HOME D:\virtual_environments</code> 设置系统环境变量
+3. <code>mkvirtualenv myenv</code> 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹</li>
 <li><code>workon</code> 来列出所有的虚拟环境，<code>workon myenv</code> 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识</li>
 <li>一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突</li>
 <li>删除某个虚拟环境 <code>rmvirtualenv myenv</code></li>

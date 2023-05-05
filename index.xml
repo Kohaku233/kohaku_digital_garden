@@ -24,7 +24,7 @@
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 setx WORKON_HOME D:\virtual_environments 设置系统环境变量 mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突 删除某个虚拟环境 rmvirtualenv myenv  </description>
+      <description>如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 2. setx WORKON_HOME D:\virtual_environments 设置系统环境变量 3. mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突 删除某个虚拟环境 rmvirtualenv myenv  </description>
     </item>
     
     <item>
@@ -541,7 +541,7 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/Tracker/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13  searchType: frontmatter searchTarget: pomodoro folder: 每日 startDate: -1w endDate: 0d fitPanelWidth: false fixedScale: 1.</description>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12  searchType: text searchTarget: 🍅 folder: /每日 startDate: -1M endDate: 0d fitPanelWidth: false fixedScale: 1.</description>
     </item>
     
     <item>
@@ -552,6 +552,15 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
       <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
       <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
  DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-06/</guid>
+      <description>🍅 星期六, 五月 06 2023, 12:18 凌晨</description>
     </item>
     
     <item>

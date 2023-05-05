@@ -146,7 +146,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.e8c4533f16c82c8d89728360848ead5c.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.7e1fb94b12aba1b3bd116118b03e93a6.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -501,11 +501,14 @@ Apr 9, 2023
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/%E6%AF%8F%E6%97%A5/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/%E6%AF%8F%E6%97%A5/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/%E6%AF%8F%E6%97%A5/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </article>
