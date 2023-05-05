@@ -4,15 +4,14 @@
 
 
 <head>
-	<meta name="generator" content="Hugo 0.96.0" />
   
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Kohaku 数字花园!"
+    content="如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 setx WORKON_HOME D:\virtual_environments 设置系统环境变量 mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突  "
   />
   <title>
-    Kohaku
+    python 虚拟环境
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -269,19 +268,9 @@
   <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 
-<style>
-  @font-face {
-    font-family: AlibabaPuHuiTi-2-65-Medium;
-    src: url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-65-Medium/AlibabaPuHuiTi-2-65-Medium.eot) format('embedded-opentype'),
-      url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-65-Medium/AlibabaPuHuiTi-2-65-Medium.otf) format('opentype'),
-      url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-65-Medium/AlibabaPuHuiTi-2-65-Medium.ttf) format('TrueType'),
-      url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-65-Medium/AlibabaPuHuiTi-2-65-Medium.woff) format('woff'),
-      url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-65-Medium/AlibabaPuHuiTi-2-65-Medium.woff2) format('woff2');
-  }
-</style>
 
 <body>
-  <div id="search-container">
+<div id="search-container">
   <div id="search-space">
     <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
       placeholder="Search for something..." dir="">
@@ -297,7 +286,7 @@
 
 
 
-  <div id="cursor-chat-layer">
+<div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
 <script type="module">
@@ -305,7 +294,8 @@
   initCursorChat("jzhao.xyz")
 </script>
 
-  <div id="index" class="singlePage">
+<div class="singlePage">
+    
     <header class="delay t-3">
     <h1 id="page-title"><a class="root-title" href="https://www.kohaku.ink/">Kohaku</a></h1>
     <div class="spacer"></div>
@@ -332,8 +322,20 @@
 </header>
 
 
-    <img id="banner" src="/banner.svg" />
     <article>
+      <h1>python 虚拟环境</h1>
+      <p class="meta">
+        Last updated 
+May 5, 2023
+
+ 
+          
+
+      </p>
+      <ul class="tags">
+    
+</ul>
+
       
 
 <aside class="mainTOC">
@@ -341,13 +343,9 @@
         <summary>Table of Contents</summary>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#about">About</a></li>
-    <li><a href="#content">Content</a>
+    <li>
       <ol>
-        <li><a href="#大数据学习">大数据学习</a></li>
-        <li><a href="#兴趣爱好">兴趣爱好</a></li>
-        <li><a href="#年度计划">年度计划</a></li>
-        <li><a href="#其他">其他</a></li>
+        <li><a href="#如何创建虚拟环境win">如何创建虚拟环境(win)</a></li>
       </ol>
     </li>
   </ol>
@@ -371,307 +369,6 @@
 
 
 
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
 
 
 
@@ -695,84 +392,18 @@
 
 
 
-<a href="#about"><h2 id="about"><span class="hanchor" ariaLabel="Anchor"># </span>About</h2></a>
-<p>我是 Kohaku，一名软件开发工程师，这是我的个人数字花园，用来记录平时的闪念笔记以及总结内容。</p>
-<a href="#content"><h2 id="content"><span class="hanchor" ariaLabel="Anchor"># </span>Content</h2></a>
-<a href="#大数据学习"><h3 id="大数据学习"><span class="hanchor" ariaLabel="Anchor"># </span>大数据学习</h3></a>
-<p><a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1">转行数据理由</a></p>
-<p><a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE-Flink-%E8%B7%AF%E7%BA%BF%E5%9B%BE">实时数据 Flink 路线图</a></p>
-<p><a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" rel="noopener" class="internal-link" data-src="/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86">Flink 基本原理</a></p>
-<a href="#兴趣爱好"><h3 id="兴趣爱好"><span class="hanchor" ariaLabel="Anchor"># </span>兴趣爱好</h3></a>
-<p><a href="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD" rel="noopener" class="internal-link" data-src="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD">Anime 花园</a></p>
-<p><a href="/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB" rel="noopener" class="internal-link" data-src="/%E5%8A%A8%E7%94%BB/%E5%8A%A8%E7%94%BB">动画</a></p>
-<a href="#年度计划"><h3 id="年度计划"><span class="hanchor" ariaLabel="Anchor"># </span>年度计划</h3></a>
-<p><a href="/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92" rel="noopener" class="internal-link" data-src="/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92">年度计划</a></p>
-<a href="#其他"><h3 id="其他"><span class="hanchor" ariaLabel="Anchor"># </span>其他</h3></a>
-<p><a href="/%E6%94%B6%E8%97%8F%E5%8F%A5%E5%AD%90" rel="noopener" class="internal-link" data-src="/%E6%94%B6%E8%97%8F%E5%8F%A5%E5%AD%90">收藏句子</a></p>
+<a href="#如何创建虚拟环境win"><h3 id="如何创建虚拟环境win"><span class="hanchor" ariaLabel="Anchor"># </span>如何创建虚拟环境(win)</h3></a>
+<ol>
+<li><code>pip install virtualenvwrapper-win</code> 安装虚拟环境管理工具，统一设置虚拟环境存放位置</li>
+<li><code>setx WORKON_HOME D:\virtual_environments</code> 设置系统环境变量</li>
+<li><code>mkvirtualenv myenv</code> 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹</li>
+<li><code>workon</code> 来列出所有的虚拟环境，<code>workon myenv</code> 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识</li>
+<li>一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突</li>
+</ol>
 
 
-      
-      <div class="content-list">
-  <h2>Recent Notes</h2>
-  
-  
-  <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 5, 2023
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-05/" class="internal-link" data-src="/%E6%AF%8F%E6%97%A5/2023-05-05/">2023-05-05</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 5, 2023
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" class="internal-link" data-src="/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">python 虚拟环境</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 1, 2023
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-01/" class="internal-link" data-src="/%E6%AF%8F%E6%97%A5/2023-05-01/">2023-05-01</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-            </ul>
-        </div>
-    </li></ul>
-
-</div>
-
-
-      
     </article>
-    <div class="delay t-4">
-      <hr/>
+    <hr/>
 
 
 <div class="page-end" id="footer">
@@ -786,10 +417,20 @@ May 1, 2023
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-05-05/" data-ctx="python 虚拟环境" data-src="/%E6%AF%8F%E6%97%A5/2023-05-05" class="internal-link">2023-05-05</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
@@ -828,13 +469,13 @@ May 1, 2023
         
         <p></p>
         <ul>
+            
+            <li><a href="https://www.kohaku.ink/">Home</a></li>
             </ul>
     </footer>
 </div>
 
 
-    </div>
-  </div>
+</div>
 </body>
-
 </html>

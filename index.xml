@@ -8,6 +8,26 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-05</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-05/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-05/</guid>
+      <description>[!NOTE] Daily Quote
+ In all things of nature there is something of the marvelous. — Aristotle
+   [[python 虚拟环境]]</description>
+    </item>
+    
+    <item>
+      <title>python 虚拟环境</title>
+      <link>https://www.kohaku.ink/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>如何创建虚拟环境(win)  pip install virtualenvwrapper-win 安装虚拟环境管理工具，统一设置虚拟环境存放位置 setx WORKON_HOME D:\virtual_environments 设置系统环境变量 mkvirtualenv myenv 创建虚拟环境，此虚拟环境会存放在 D:\virtual_environments 下，创建多个虚拟环境则会在文件夹下创建多个子文件夹 workon 来列出所有的虚拟环境，workon myenv 则是进入创建的 myenv 环境，此时命令行前面会带此环境的标识 一般一个大项目对应一个虚拟环境，因为多个环境之间所需要的依赖也大不相同，版本之间也存在冲突  </description>
+    </item>
+    
+    <item>
       <title>2023-05-01</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-01/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
