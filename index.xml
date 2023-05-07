@@ -8,6 +8,25 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-07</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-07/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-07/</guid>
+      <description>[!NOTE] Daily Quote
+ You are always free to change your mind and choose a different future, or a different past.</description>
+    </item>
+    
+    <item>
+      <title>Switch 模拟器</title>
+      <link>https://www.kohaku.ink/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</guid>
+      <description>[!NOTE] 概览 目前 Switch 模拟器主要就是 yuzu 和 ryujinx 两款，不少人说 Cemu 不是模拟器吗？那个是 WiiU 的模拟器，实际上旷野之息是 WiiU 游戏后面被移植到 Switch 上去的。目前几乎所有 Switch 模拟器都是开源的，所以任天堂起诉不了它们</description>
+    </item>
+    
+    <item>
       <title>2023-05-05</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-05/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
