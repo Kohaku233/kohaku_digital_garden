@@ -147,7 +147,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.72d8cc8ae56f7f007af7ad0a0ed01fdc.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.5decf41f60ba3e959fd23b81e92af43a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,6 +349,7 @@ Apr 26, 2023
         <li><a href="#远程仓库和本地仓库-commit-信息不一致">远程仓库和本地仓库 commit 信息不一致</a></li>
         <li><a href="#回退-commit">回退 commit</a></li>
         <li><a href="#连接-ssh">连接 SSH</a></li>
+        <li><a href="#其他">其他</a></li>
       </ol>
     </li>
   </ol>
@@ -430,6 +431,7 @@ Apr 26, 2023
 <li>将 SSH 公钥添加到 github 或者 gitee</li>
 <li>克隆仓库或者将远程仓库地址由 https 变为 SSH <code>git remote set-url origin git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</code></li>
 </ol>
+<a href="#其他"><h3 id="其他"><span class="hanchor" ariaLabel="Anchor"># </span>其他</h3></a>
 
 
     </article>
