@@ -147,7 +147,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.5decf41f60ba3e959fd23b81e92af43a.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.89a62c6de1f80e097cb9165c9c38053b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,7 +349,7 @@ Apr 26, 2023
         <li><a href="#远程仓库和本地仓库-commit-信息不一致">远程仓库和本地仓库 commit 信息不一致</a></li>
         <li><a href="#回退-commit">回退 commit</a></li>
         <li><a href="#连接-ssh">连接 SSH</a></li>
-        <li><a href="#其他">其他</a></li>
+        <li><a href="#忽略已经提交的文件">忽略已经提交的文件</a></li>
       </ol>
     </li>
   </ol>
@@ -431,7 +431,12 @@ Apr 26, 2023
 <li>将 SSH 公钥添加到 github 或者 gitee</li>
 <li>克隆仓库或者将远程仓库地址由 https 变为 SSH <code>git remote set-url origin git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</code></li>
 </ol>
-<a href="#其他"><h3 id="其他"><span class="hanchor" ariaLabel="Anchor"># </span>其他</h3></a>
+<a href="#忽略已经提交的文件"><h3 id="忽略已经提交的文件"><span class="hanchor" ariaLabel="Anchor"># </span>忽略已经提交的文件</h3></a>
+<ol>
+<li>将已经提交的文件忽略，在 gitignore 文件中添加需要忽略的文件</li>
+<li>从 git 仓库中移除文件 <code>git rm --cached &lt;file&gt;</code></li>
+<li>提交更改，远程仓库也对应删除这些需要忽略的文件</li>
+</ol>
 
 
     </article>
