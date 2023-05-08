@@ -8,6 +8,16 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-08</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-08/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-08/</guid>
+      <description>[!NOTE] Daily Quote
+ There is no scarcity of opportunity to make a living at what you love; there&amp;rsquo;s only scarcity of resolve to make it happen.</description>
+    </item>
+    
+    <item>
       <title>2023-05-07</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-07/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
@@ -188,7 +198,7 @@
       
       <guid>https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>远程仓库和本地仓库 commit 信息不一致 经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
- 首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    </description>
+ 首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    回退 commit  git reset --soft HEAD^ 可以回退已经 commit 的代码，所有代码会再次回到暂存区  连接 SSH  首先在自己电脑上生成公钥和私钥 ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.</description>
     </item>
     
     <item>
