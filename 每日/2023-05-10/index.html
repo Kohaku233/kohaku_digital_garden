@@ -8,9 +8,9 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=" [!NOTE] Daily Quote
+    content="[!NOTE] Daily Quote
  Fear not for the future, weep not for the past. — Percy Bysshe Shelley
-   工作  待授权部分功能迁移 Scala，数据写入 ES 测试，验证功能提测 完成火眼报告作业 精益体系认证考试  生活  给 Mac 设置自动任务，到点了自动提交当日的笔记 继续完成搜索部分 API 的编写，初步实现根据视频在评论区发评论  "
+   工作  待授权部分功能迁移 Scala，数据写入 ES 测试，验证功能提测 完成火眼报告作业 精益体系认证考试  生活  给 Mac 设置自动任务，到点了自动提交当日的笔记 继续完成搜索部分 API 的编写，初步实现根据视频在评论区发评论 整理 Node 服务使用 TS 中遇到的问题以及 tsconfig."
   />
   <title>
     2023-05-10
@@ -148,7 +148,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.d90c12871619f12ead11e4522cd61f00.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.6df3a1bd86f069f67b0de0a541ad9ab2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,7 @@ May 9, 2023
 <ul>
 <li><input disabled="" type="checkbox"> 给 Mac 设置自动任务，到点了自动提交当日的笔记</li>
 <li><input disabled="" type="checkbox"> 继续完成搜索部分 API 的编写，初步实现根据视频在评论区发评论</li>
+<li><input disabled="" type="checkbox"> 整理 Node 服务使用 TS 中遇到的问题以及 tsconfig.json 的参数配置和 tsc、ts-node 各自的区别和相同点，nodemon 如何启动服务并且实现热更新</li>
 </ul>
 
 
