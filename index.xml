@@ -8,6 +8,16 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-11</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-11/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-11/</guid>
+      <description>[!NOTE] Daily Quote
+ Success is getting what you want. Happiness is wanting what you get. — Dale Carnegie</description>
+    </item>
+    
+    <item>
       <title>2023-05-09</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-09/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
@@ -524,7 +534,9 @@
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/TypeScript/</guid>
-      <description>和 JS 的区别 nodejs 项目使用 TS </description>
+      <description>和 JS 的区别 nodejs 项目使用 TS .d.ts 文件和普通类型文件 在 TypeScript 中，你可以使用 .ts 文件定义类型（例如接口、类型别名等），也可以使用 .d.ts 声明文件来定义类型。两者之间的主要区别在于它们的使用场景和可见性。
+普通类型定义 在 .ts 文件中定义的类型仅在该文件或者明确导入该文件的地方可见。这种类型定义通常用于在单个文件或模块中使用的类型，或者当你想显式控制类型的可见性时。例如，你可能会在一个类或函数的定义中使用接口，这个接口只在这个类或函数的文件中使用。
+声明文件（.d.ts） 在 .</description>
     </item>
     
     <item>
@@ -612,6 +624,15 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
       <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
       <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
  DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-12/</guid>
+      <description>🍅 星期五, 五月 12 2023, 12:15 凌晨</description>
     </item>
     
     <item>
