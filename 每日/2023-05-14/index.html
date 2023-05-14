@@ -141,13 +141,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.9c2f9990dfaf5d34c367c40c865d1d4f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.5c7f38e76211e43295f3f77b825d75a8.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.c2166d352b8fc8cd60f2c4e288cdeddb.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -408,12 +408,16 @@ May 14, 2023
 <img src="https://images.unsplash.com/photo-1608874973277-a34ed4aba3f8?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3wzNjM5Nzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwNTMxNzl8&amp;ixlib=rb-4.0.3&amp;q=85" width="auto" alt="photo by Marek Okon on Unsplash"  /></p>
 </blockquote>
 <ul>
-<li><input disabled="" type="checkbox"> 打扫卫生</li>
-<li><input disabled="" type="checkbox"> 饮食和睡眠按照约定计划进行，长期的事应该以长期的眼光去判断并以长期的行动执行，简单说就是持之以恒地用正确的方法做正确的事</li>
+<li><input checked="" disabled="" type="checkbox"> 打扫卫生</li>
+<li><input checked="" disabled="" type="checkbox"> 饮食和睡眠按照约定计划进行，长期的事应该以长期的眼光去判断并以长期的行动执行，简单说就是持之以恒地用正确的方法做正确的事</li>
 <li><input disabled="" type="checkbox"> Bento 作为个人网站的简介页配置</li>
 <li><input disabled="" type="checkbox"> 《我们为什么睡觉》书籍阅读30min，我还是喜欢可以直接标注并记笔记然后在本地笔记中可以立马看到的感觉，这样可能会牺牲某些东西但我觉得这是值得的</li>
-<li><input disabled="" type="checkbox"> 锻炼身体</li>
+<li><input checked="" disabled="" type="checkbox"> 锻炼身体</li>
+<li><input checked="" disabled="" type="checkbox"> 路由器相关事项</li>
 </ul>
+<p>🍅 星期日, 五月 14 2023, 17:26 下午
+🍅 星期日, 五月 14 2023, 5:52 下午</p>
+<p>🍅 星期日, 五月 14 2023, 10:51 晚上</p>
 
 
     </article>

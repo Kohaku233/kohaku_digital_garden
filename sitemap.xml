@@ -214,6 +214,9 @@
     <loc>https://www.kohaku.ink/Tracker/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://www.kohaku.ink/%E5%81%A5%E8%BA%AB%E8%AE%A1%E5%88%92/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://www.kohaku.ink/bookmarks/</loc>
   </url><url>
     <loc>https://www.kohaku.ink/categories/</loc>
