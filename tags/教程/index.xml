@@ -8,6 +8,16 @@
     <language>en</language>
     <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Flink 常见概念</title>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Flink-%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5/</guid>
+      <description>DataStream 和 DataStreamSource 是 Apache Flink 中的两个不同概念，它们在 Flink 作业中起到不同的作用。
+ DataStream：  DataStream 是 Apache Flink 的一个核心抽象，用于表示处理流数据的无界数据集。它表示了一个数据集的连续流，并提供了用于转换、过滤、分组、窗口等操作的 API。可以将 DataStream 看作是一个流式处理作业的中间或最终结果。</description>
+    </item>
+    
+    <item>
       <title>Kafka</title>
       <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Kafka/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
