@@ -141,13 +141,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -484,7 +484,18 @@ Apr 27, 2023
     
     
     
+      
+      
     
+    
+    
+      
+      
+      
+      
+      
+      
+      
     
     
 
@@ -492,10 +503,6 @@ Apr 27, 2023
     
       
       
-      
-      
-      
-    
     
 
   
@@ -569,7 +576,7 @@ Apr 27, 2023
 <li><input checked="" disabled="" type="checkbox"> 锻炼身体，健康饮食  饮食没有非常健康，中午吃的面晚上吃的麦当劳</li>
 <li><input checked="" disabled="" type="checkbox"> 网页资源整理，去除掉大部分不需要的资源和收藏</li>
 <li><input disabled="" type="checkbox"> <del>obsidian 插件整理和大纲编写</del> 这个先暂延，近几天要放假需要安排行程</li>
-<li><input checked="" disabled="" type="checkbox"> 考虑假期的安排，做一下<a href="/%E8%A1%8C%E7%A8%8B%E8%A7%84%E5%88%92" rel="noopener" class="internal-link" data-src="/%E8%A1%8C%E7%A8%8B%E8%A7%84%E5%88%92">行程规划</a>和酒店预定等工作，这个时间估计只能忍痛被宰了</li>
+<li><input checked="" disabled="" type="checkbox"> 考虑假期的安排，做一下<a class="internal-link broken">行程规划</a>和酒店预定等工作，这个时间估计只能忍痛被宰了</li>
 <li><input disabled="" type="checkbox"> 打扫房间，整理个人物品</li>
 <li><input disabled="" type="checkbox"> obsidian 作为电子阅读器的可能性以及 readwise 的可能性</li>
 </ul>

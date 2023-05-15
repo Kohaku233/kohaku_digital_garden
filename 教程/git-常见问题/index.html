@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="1 2 3 4 5  # MP4 文件转为 AVI 文件 ffmpeg -i input.mp4 output.avi # M4A 音频转为 FLAC 音频 ffmpeg -i input."
+    content="远程仓库和本地仓库 commit 信息不一致 经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
+ 首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    回退 commit  git reset --soft HEAD^ 可以回退已经 commit 的代码，所有代码会再次回到暂存区  连接 SSH  首先在自己电脑上生成公钥和私钥 ssh-keygen -t rsa -b 4096 -C &quot;your_email@example."
   />
   <title>
-    FFmpeg
+    git
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -140,13 +141,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -323,10 +324,10 @@
 
 
     <article>
-      <h1>FFmpeg</h1>
+      <h1>git</h1>
       <p class="meta">
         Last updated 
-Apr 29, 2023
+Apr 26, 2023
 
  
           
@@ -338,6 +339,24 @@ Apr 29, 2023
 
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#远程仓库和本地仓库-commit-信息不一致">远程仓库和本地仓库 commit 信息不一致</a></li>
+        <li><a href="#回退-commit">回退 commit</a></li>
+        <li><a href="#连接-ssh">连接 SSH</a></li>
+        <li><a href="#忽略已经提交的文件">忽略已经提交的文件</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -377,23 +396,48 @@ Apr 29, 2023
 
 
 
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># MP4 文件转为 AVI 文件</span>
-</span></span><span class="line"><span class="cl"><span class="n">ffmpeg</span> <span class="n">-i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="n">output</span><span class="p">.</span><span class="n">avi</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># M4A 音频转为 FLAC 音频</span>
-</span></span><span class="line"><span class="cl"><span class="n">ffmpeg</span> <span class="n">-i</span> <span class="n">input</span><span class="p">.</span><span class="n">m4a</span> <span class="n">-c</span><span class="err">:</span><span class="n">a</span> <span class="n">flac</span> <span class="n">output</span><span class="p">.</span><span class="n">flac</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+<a href="#远程仓库和本地仓库-commit-信息不一致"><h3 id="远程仓库和本地仓库-commit-信息不一致"><span class="hanchor" ariaLabel="Anchor"># </span>远程仓库和本地仓库 commit 信息不一致</h3></a>
+<p>经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：</p>
+<ol>
+<li>首先添加远程仓库 <code>git remote add origin 远程仓库链接</code></li>
+<li>fetch 远程仓库 <code>git fetch origin</code></li>
+<li>如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去</li>
+<li>如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支
+<ol>
+<li><code>git checkout -D 需要删除分支的名字</code></li>
+<li><code>git checkout -b 名字不一样的分支</code></li>
+</ol>
+</li>
+<li>然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数
+<ol>
+<li><code>git merge 名字不一样的分支 --allow-unrelated-histories</code></li>
+<li>然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了</li>
+</ol>
+</li>
+</ol>
+<a href="#回退-commit"><h3 id="回退-commit"><span class="hanchor" ariaLabel="Anchor"># </span>回退 commit</h3></a>
+<ol>
+<li><code>git reset --soft HEAD^</code> 可以回退已经 commit 的代码，所有代码会再次回到暂存区</li>
+</ol>
+<a href="#连接-ssh"><h3 id="连接-ssh"><span class="hanchor" ariaLabel="Anchor"># </span>连接 SSH</h3></a>
+<ol>
+<li>首先在自己电脑上生成公钥和私钥 <code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></li>
+<li>添加 SSH 公钥到 SSH Agent
+<ol>
+<li>启动 SSH agent <code>eval &quot;$(ssh-agent -s)&quot;</code></li>
+<li>将 SSH 公钥添加到 SSH agent <code>ssh-add ~/.ssh/id_rsa</code></li>
+</ol>
+</li>
+<li>将 SSH 公钥添加到 github 或者 gitee</li>
+<li>克隆仓库或者将远程仓库地址由 https 变为 SSH <code>git remote set-url origin git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</code></li>
+</ol>
+<a href="#忽略已经提交的文件"><h3 id="忽略已经提交的文件"><span class="hanchor" ariaLabel="Anchor"># </span>忽略已经提交的文件</h3></a>
+<ol>
+<li>将已经提交的文件忽略，在 gitignore 文件中添加需要忽略的文件</li>
+<li>从 git 仓库中移除文件 <code>git rm --cached &lt;file&gt;</code></li>
+<li>提交更改，远程仓库也对应删除这些需要忽略的文件</li>
+</ol>
+
 
     </article>
     <hr/>
@@ -419,7 +463,7 @@ Apr 29, 2023
       
       
       <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-28/" data-ctx="FFmpeg" data-src="/%E6%AF%8F%E6%97%A5/2023-04-28" class="internal-link">2023-04-28</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-26/" data-ctx="教程/git 常见问题" data-src="/%E6%AF%8F%E6%97%A5/2023-04-26" class="internal-link">2023-04-26</a>
       </li>
       
       

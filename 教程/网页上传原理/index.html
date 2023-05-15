@@ -142,13 +142,13 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -489,7 +489,7 @@ Apr 10, 2023
       
       
       <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-10/" data-ctx="网页上传原理" data-src="/%E6%AF%8F%E6%97%A5/2023-04-10" class="internal-link">2023-04-10</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-04-10/" data-ctx="教程/网页上传原理" data-src="/%E6%AF%8F%E6%97%A5/2023-04-10" class="internal-link">2023-04-10</a>
       </li>
       
       

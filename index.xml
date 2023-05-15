@@ -18,6 +18,16 @@
     </item>
     
     <item>
+      <title>产品相关</title>
+      <link>https://www.kohaku.ink/%E4%BA%A7%E5%93%81%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E4%BA%A7%E5%93%81%E7%9B%B8%E5%85%B3/</guid>
+      <description>产品思维30讲 谷歌和亚马逊如何做产品
+有个小Tips，在投入做一款产品之前，可以先用低代码平台快速搭一个产品介绍页，让感兴趣的用户留下邮箱。然后把产品介绍页发布在社交平台看看是否有人愿意留下联系方式，再决定是否启动。</description>
+    </item>
+    
+    <item>
       <title>2023-05-14</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-14/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
@@ -100,10 +110,10 @@
     
     <item>
       <title>Switch 模拟器</title>
-      <link>https://www.kohaku.ink/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</link>
+      <link>https://www.kohaku.ink/Games/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</guid>
+      <guid>https://www.kohaku.ink/Games/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</guid>
       <description>[!NOTE] 概览 目前 Switch 模拟器主要就是 yuzu 和 ryujinx 两款，不少人说 Cemu 不是模拟器吗？那个是 WiiU 的模拟器，实际上旷野之息是 WiiU 游戏后面被移植到 Switch 上去的。目前几乎所有 Switch 模拟器都是开源的，所以任天堂起诉不了它们</description>
     </item>
     
@@ -170,19 +180,19 @@
     
     <item>
       <title>FFmpeg</title>
-      <link>https://www.kohaku.ink/FFmpeg/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/FFmpeg/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/FFmpeg/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/FFmpeg/</guid>
       <description>1 2 3 4 5  # MP4 文件转为 AVI 文件 ffmpeg -i input.mp4 output.avi # M4A 音频转为 FLAC 音频 ffmpeg -i input.</description>
     </item>
     
     <item>
       <title>Youtube 视频下载</title>
-      <link>https://www.kohaku.ink/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/Youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11  # 单独下载音频 yt-dlp -f &amp;#34;bestaudio[ext=m4a]&amp;#34; 视频链接 # 音频下载 m4a 转为 mp3 格式 yt-dlp -f &amp;#34;bestaudio[ext=m4a]&amp;#34; --extract-audio --audio-format mp3 --audio-quality 0 视频链接 # 视频下载最高质量 yt-dlp &amp;#34;bestvideo+bestaudio/best&amp;#34; 视频链接 # 选择视频和音频质量，会先展示不同种类的 id，然后根据 id 下载对应音视频文件就好 yt-dlp -F 视频链接   </description>
     </item>
     
@@ -234,15 +244,6 @@
     </item>
     
     <item>
-      <title>行程规划</title>
-      <link>https://www.kohaku.ink/%E8%A1%8C%E7%A8%8B%E8%A7%84%E5%88%92/</link>
-      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kohaku.ink/%E8%A1%8C%E7%A8%8B%E8%A7%84%E5%88%92/</guid>
-      <description>周六晚上八点半飞机几乎十二点到达，因为到达时间太晚了晚上就近在机场附近酒店住了。</description>
-    </item>
-    
-    <item>
       <title>香港银行卡办理</title>
       <link>https://www.kohaku.ink/%E9%A6%99%E6%B8%AF%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8A%9E%E7%90%86/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
@@ -259,15 +260,15 @@
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-26/</guid>
       <description>[!NOTE] Daily Quote
  He that is giddy thinks the world turns round. — William Shakespeare
-   [[git 常见问题]]</description>
+   [[教程/git 常见问题]]</description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>远程仓库和本地仓库 commit 信息不一致 经常会遇到远程仓库已经有提交记录来初始化仓库，然后因为一些原因一直在本地提交代码的情况出现，这样本地的提交记录和远程的提交记录完全不一样，可以说毫无关联。遇到这种情况应该：
  首先添加远程仓库 git remote add origin 远程仓库链接 fetch 远程仓库 git fetch origin 如果本地分支和远程分支名字不一样可以直接提交本地分支到远程分支上去 如果一样需要新建一个名字不一样的分支用来合并并且删除名字一样的分支  git checkout -D 需要删除分支的名字 git checkout -b 名字不一样的分支   然后切回远程分支的主分支上并在本地也创建一个相同的，然后本地合并之前的那个需要合并的分支，由于两个分支的提交信息完全不同所以需要使用一些参数  git merge 名字不一样的分支 --allow-unrelated-histories 然后在本地解决掉有冲突的文件后再提交就合并了两个提交信息不一样的分支了    回退 commit  git reset --soft HEAD^ 可以回退已经 commit 的代码，所有代码会再次回到暂存区  连接 SSH  首先在自己电脑上生成公钥和私钥 ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.</description>
     </item>
@@ -606,15 +607,15 @@
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-10/</guid>
-      <description>学习网页上传文件并处理功能[[网页上传原理]]，对于上传的整体流程有了更为深入的理解</description>
+      <description>学习网页上传文件并处理功能[[教程/网页上传原理]]，对于上传的整体流程有了更为深入的理解</description>
     </item>
     
     <item>
       <title>网页上传原理</title>
-      <link>https://www.kohaku.ink/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/</link>
+      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kohaku.ink/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/</guid>
+      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86/</guid>
       <description>FileReader 对象用于读取用户在浏览器中选择的文件。这在处理文件上传、读取文件内容以显示在页面上或解析文件数据时非常有用。
 FileReader 对象包含了一系列方法和事件，让你能够以不同的方式读取文件数据，例如：
  readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &amp;ldquo;UTF-8&amp;rdquo;。 readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。 readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。  FileReader 对象还包含了一些事件，例如：</description>

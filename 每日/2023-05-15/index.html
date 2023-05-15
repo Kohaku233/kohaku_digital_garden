@@ -141,13 +141,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -430,8 +430,8 @@ May 15, 2023
 </blockquote>
 <a href="#工作"><h3 id="工作"><span class="hanchor" ariaLabel="Anchor"># </span>工作</h3></a>
 <ul>
-<li><input disabled="" type="checkbox"> 给一周的工作列一个重要性清单，哪些事情重要哪些事情不重要搞清楚之后做事就会有一个主次关系</li>
-<li><input disabled="" type="checkbox"> 根据主次关系安排每天做的内容，对每天需要做的事情就有了眉目，而不是想一件做一件事情</li>
+<li><input checked="" disabled="" type="checkbox"> 给一周的工作列一个重要性清单，哪些事情重要哪些事情不重要搞清楚之后做事就会有一个主次关系</li>
+<li><input checked="" disabled="" type="checkbox"> 根据主次关系安排每天做的内容，对每天需要做的事情就有了眉目，而不是想一件做一件事情</li>
 </ul>
 <a href="#一周工作要事"><h3 id="一周工作要事"><span class="hanchor" ariaLabel="Anchor"># </span>一周工作要事</h3></a>
 <ol>
@@ -441,9 +441,9 @@ May 15, 2023
 </ol>
 <a href="#周一"><h3 id="周一"><span class="hanchor" ariaLabel="Anchor"># </span>周一</h3></a>
 <ul>
-<li><input disabled="" type="checkbox"> 数据需求模版界面新建，五个筛选项：需求及评审建议提交时间按日来</li>
+<li><input checked="" disabled="" type="checkbox"> 数据需求模版界面新建，五个筛选项：需求及评审建议提交时间按日来</li>
 <li><input disabled="" type="checkbox"> 简单列出实时数据基本原理，分配到每个人身上以及具体时间</li>
-<li><input disabled="" type="checkbox"> </li>
+<li><input checked="" disabled="" type="checkbox"> 前端应知应会考试</li>
 </ul>
 <a href="#周二"><h3 id="周二"><span class="hanchor" ariaLabel="Anchor"># </span>周二</h3></a>
 <ul>
@@ -468,7 +468,10 @@ May 15, 2023
 </ul>
 <p>🍅 星期一, 五月 15 2023, 12:40 凌晨
 🍅 星期一, 五月 15 2023, 10:32 上午
-🍅 星期一, 五月 15 2023, 11:28 上午🍅 星期一, 五月 15 2023, 2:46 下午🍅 星期一, 五月 15 2023, 3:24 下午</p>
+🍅 星期一, 五月 15 2023, 11:28 上午
+🍅 星期一, 五月 15 2023, 2:46 下午
+🍅 星期一, 五月 15 2023, 3:24 下午
+🍅 星期一, 五月 15 2023, 5:30 下午</p>
 
 
     </article>

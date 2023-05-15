@@ -8,10 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="周六晚上八点半飞机几乎十二点到达，因为到达时间太晚了晚上就近在机场附近酒店住了。"
+    content="[!NOTE] 概览 目前 Switch 模拟器主要就是 yuzu 和 ryujinx 两款，不少人说 Cemu 不是模拟器吗？那个是 WiiU 的模拟器，实际上旷野之息是 WiiU 游戏后面被移植到 Switch 上去的。目前几乎所有 Switch 模拟器都是开源的，所以任天堂起诉不了它们"
   />
   <title>
-    行程规划
+    Switch 模拟器
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -140,13 +140,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -323,10 +323,10 @@
 
 
     <article>
-      <h1>行程规划</h1>
+      <h1>Switch 模拟器</h1>
       <p class="meta">
         Last updated 
-Apr 27, 2023
+May 7, 2023
 
  
           
@@ -338,6 +338,22 @@ Apr 27, 2023
 
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#yuzu">yuzu</a></li>
+        <li><a href="#ryujinx">ryujinx</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -368,16 +384,34 @@ Apr 27, 2023
   
   
   
+    
+    
+      
+      
+        
+      
+      
+      
+      
+    
+    
   
   
   
+  
 
 
 
 
 
 
-<p>周六晚上八点半飞机几乎十二点到达，因为到达时间太晚了晚上就近在机场附近酒店住了。</p>
+<blockquote class="note-callout">
+<p> 概览
+目前 Switch 模拟器主要就是 yuzu 和 ryujinx 两款，不少人说 Cemu 不是模拟器吗？那个是 WiiU 的模拟器，实际上旷野之息是 WiiU 游戏后面被移植到 Switch 上去的。目前几乎所有 Switch 模拟器都是开源的，所以任天堂起诉不了它们</p>
+</blockquote>
+<a href="#yuzu"><h3 id="yuzu"><span class="hanchor" ariaLabel="Anchor"># </span>yuzu</h3></a>
+<p>大部分 Switch 游戏都能在 yuzu 模拟器上正常运行，并且支持 xci 和 nsp 类型的游戏文件，有中文 GUI等等。</p>
+<a href="#ryujinx"><h3 id="ryujinx"><span class="hanchor" ariaLabel="Anchor"># </span>ryujinx</h3></a>
 
 
     </article>
@@ -404,7 +438,7 @@ Apr 27, 2023
       
       
       <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-27/" data-ctx="行程规划" data-src="/%E6%AF%8F%E6%97%A5/2023-04-27" class="internal-link">2023-04-27</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-05-07/" data-ctx="Games/Switch 模拟器" data-src="/%E6%AF%8F%E6%97%A5/2023-05-07" class="internal-link">2023-05-07</a>
       </li>
       
       

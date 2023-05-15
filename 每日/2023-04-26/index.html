@@ -10,7 +10,7 @@
     name="description"
     content="[!NOTE] Daily Quote
  He that is giddy thinks the world turns round. — William Shakespeare
-   [[git 常见问题]]"
+   [[教程/git 常见问题]]"
   />
   <title>
     2023-04-26
@@ -142,13 +142,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -510,7 +510,7 @@ Apr 26, 2023
 
 <img src="https://images.unsplash.com/photo-1564403848767-9db2a39c65aa?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=MnwzNjM5Nzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODI0NDU4ODM&amp;ixlib=rb-4.0.3&amp;q=85" width="auto" alt="photo by Trayan on Unsplash"  /></p>
 </blockquote>
-<p><a href="/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" rel="noopener" class="internal-link" data-src="/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">git 常见问题</a></p>
+<p><a href="/%E6%95%99%E7%A8%8B/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" rel="noopener" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/git-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">git 常见问题</a></p>
 <a href="#工作"><h3 id="工作"><span class="hanchor" ariaLabel="Anchor"># </span>工作</h3></a>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 财资云待授权功能开发联调</li>

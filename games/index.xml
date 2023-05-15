@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Kohaku</title>
+    <link>https://www.kohaku.ink/games/</link>
+    <description>Recent content in Games on Kohaku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switch 模拟器</title>
+      <link>https://www.kohaku.ink/Games/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Games/Switch-%E6%A8%A1%E6%8B%9F%E5%99%A8/</guid>
+      <description>[!NOTE] 概览 目前 Switch 模拟器主要就是 yuzu 和 ryujinx 两款，不少人说 Cemu 不是模拟器吗？那个是 WiiU 的模拟器，实际上旷野之息是 WiiU 游戏后面被移植到 Switch 上去的。目前几乎所有 Switch 模拟器都是开源的，所以任天堂起诉不了它们</description>
+    </item>
+    
+  </channel>
+</rss>

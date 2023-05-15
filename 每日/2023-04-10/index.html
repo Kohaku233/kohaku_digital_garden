@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="学习网页上传文件并处理功能[[网页上传原理]]，对于上传的整体流程有了更为深入的理解"
+    content="学习网页上传文件并处理功能[[教程/网页上传原理]]，对于上传的整体流程有了更为深入的理解"
   />
   <title>
     2023-04-10
@@ -140,13 +140,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.8b130579ce1540120bffbdb96f61b452.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.4ca8f68eafeeef50eb9cf75dc1565c0f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.b6c627dfecb48aacc0701623d613d79f.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.047af27fb373a8de71703bdee5bd519e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -420,7 +420,7 @@ Apr 10, 2023
 
 
 
-<p>学习网页上传文件并处理功能<a href="/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86" rel="noopener" class="internal-link" data-src="/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86">网页上传原理</a>，对于上传的整体流程有了更为深入的理解</p>
+<p>学习网页上传文件并处理功能<a href="/%E6%95%99%E7%A8%8B/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86" rel="noopener" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/%E7%BD%91%E9%A1%B5%E4%B8%8A%E4%BC%A0%E5%8E%9F%E7%90%86">网页上传原理</a>，对于上传的整体流程有了更为深入的理解</p>
 
 
     </article>
