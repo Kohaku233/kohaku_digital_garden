@@ -8,10 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="未完待续……"
+    content="目录  📚（学习）理解Flink和Flink JobManager的基本概念 🔄（流程）详细了解Flink JobManager的工作流程 💡（理解）理解Flink JobManager在实际工作中的角色 🔧（技术）学习如何配置和优化Flink JobManager 🌐（网络）探索Flink JobManager在大数据处理中的应用实例  Flink 和 Flink JobManager的基本概念 Apache Flink 是一个开源的流处理框架，它的设计初衷是为了高效地处理和分析数据。在这个框架中，JobManager 是一个非常重要的组件。"
   />
   <title>
-    亲爱的我包含杀意
+    Flink JobManager
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -323,10 +323,10 @@
 
 
     <article>
-      <h1>亲爱的我包含杀意</h1>
+      <h1>Flink JobManager</h1>
       <p class="meta">
         Last updated 
-Apr 24, 2023
+May 25, 2023
 
  
           
@@ -338,6 +338,22 @@ Apr 24, 2023
 
       
 
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#目录">目录</a></li>
+        <li><a href="#flink-和-flink-jobmanager的基本概念">Flink 和 Flink JobManager的基本概念</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -377,7 +393,28 @@ Apr 24, 2023
 
 
 
-<p>未完待续……</p>
+<a href="#目录"><h3 id="目录"><span class="hanchor" ariaLabel="Anchor"># </span>目录</h3></a>
+<ol>
+<li>📚（学习）理解Flink和Flink JobManager的基本概念</li>
+<li>🔄（流程）详细了解Flink JobManager的工作流程</li>
+<li>💡（理解）理解Flink JobManager在实际工作中的角色</li>
+<li>🔧（技术）学习如何配置和优化Flink JobManager</li>
+<li>🌐（网络）探索Flink JobManager在大数据处理中的应用实例</li>
+</ol>
+<a href="#flink-和-flink-jobmanager的基本概念"><h3 id="flink-和-flink-jobmanager的基本概念"><span class="hanchor" ariaLabel="Anchor"># </span>Flink 和 Flink JobManager的基本概念</h3></a>
+<p>Apache Flink 是一个开源的流处理框架，它的设计初衷是为了高效地处理和分析数据。在这个框架中，JobManager 是一个非常重要的组件。</p>
+<p>JobManager 是 Flink 系统中负责调度和协调任务执行的核心服务。它负责接收作业提交请求，协调和管理作业的生命周期，以及跟踪可用的资源。</p>
+<p>作为一个 Flink 系统的中心节点，JobManager 还负责协调故障恢复。例如，当某个任务失败时，JobManager 会根据配置的故障恢复策略来决定如何处理这个失败的任务。如果配置为重启失败的任务，那么 JobManager 会重新调度任务并确保系统的连续运行。</p>
+<p>你可以把 JobManager 看作是 Flink 系统的大脑 🧠。它知道每个任务的状态，知道哪些资源是可用的，当遇到问题时，它能决定如何最好地解决问题。</p>
+<p>JobManager 的主要职责包括：</p>
+<ul>
+<li>协调和监控 Flink Job</li>
+<li>检查点（checkpoint）的协调</li>
+<li>故障恢复</li>
+<li>资源的管理和调度</li>
+</ul>
+<p>当一个 Job 被提交到 Flink 集群时，JobManager 会接收这个 Job，并准备其执行。它会负责任务的调度和部署到 TaskManager 上。</p>
+<p>在实际工作中，了解和优化 JobManager 的配置是非常重要的，因为 JobManager 的性能直接影响到整个 Flink Job 的性能。对于大数据处理，JobManager 需要足够的资源来维护系统的状态，并且在出现故障时恢复状态。</p>
 
 
     </article>
@@ -395,30 +432,10 @@ Apr 24, 2023
     
     
     
+    <li>
+      No backlinks found
+    </li>
     
-    
-      
-      
-      
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-24/" data-ctx="漫画/亲爱的我包含杀意" data-src="/%E6%AF%8F%E6%97%A5/2023-04-24" class="internal-link">2023-04-24</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD/" data-ctx="漫画/亲爱的我包含杀意" data-src="/%E6%BC%AB%E7%94%BB/Anime-%E8%8A%B1%E5%9B%AD" class="internal-link">Anime 花园</a>
-      </li>
-      
-      
-      
 </ul>
 
     </div>

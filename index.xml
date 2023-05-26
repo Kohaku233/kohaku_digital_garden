@@ -8,6 +8,35 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-25</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-25/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-25/</guid>
+      <description>[!NOTE] Daily Quote
+ Let me tell you the secret that has led me to my goal: my strength lies solely in my tenacity.</description>
+    </item>
+    
+    <item>
+      <title>Flink JobManager</title>
+      <link>https://www.kohaku.ink/Flink-JobManager/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/Flink-JobManager/</guid>
+      <description>目录  📚（学习）理解Flink和Flink JobManager的基本概念 🔄（流程）详细了解Flink JobManager的工作流程 💡（理解）理解Flink JobManager在实际工作中的角色 🔧（技术）学习如何配置和优化Flink JobManager 🌐（网络）探索Flink JobManager在大数据处理中的应用实例  Flink 和 Flink JobManager的基本概念 Apache Flink 是一个开源的流处理框架，它的设计初衷是为了高效地处理和分析数据。在这个框架中，JobManager 是一个非常重要的组件。</description>
+    </item>
+    
+    <item>
+      <title>GPT4 Prompt</title>
+      <link>https://www.kohaku.ink/GPT4-Prompt/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/GPT4-Prompt/</guid>
+      <description>加强 Prompt  https://raw.githubusercontent.com/JushBJJ/Mr.-Ranedeer-AI-Tutor/main/Mr_Ranedeer.json
+风格选择 学习风格选择演绎型，沟通风格选择苏格拉底式，语气选择信息型，推理框架选择归纳型，使用表情符号，深度选择研究生</description>
+    </item>
+    
+    <item>
       <title>2023-05-24</title>
       <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-24/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
