@@ -8,6 +8,36 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-05-26</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-26/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-26/</guid>
+      <description> [!NOTE] Daily Quote
+ Once you choose hope, anything&amp;rsquo;s possible. — Christopher Reeve
+   </description>
+    </item>
+    
+    <item>
+      <title>2023-05-27</title>
+      <link>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-27/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-05-27/</guid>
+      <description>[!NOTE] Daily Quote
+ Love is rarer than genius itself. And friendship is rarer than love. — Charles Péguy</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://www.kohaku.ink/React/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/React/</guid>
+      <description> React 的基础和介绍 🎯 JSX：语法及其特性 💡 组件：函数组件和类组件 👨‍💻 Props 和 State：理解和使用 🚀 生命周期方法 🔨 React Hooks：使用和理解 🎯 高阶组件和 Render Props 👨‍💻 使用 Context 进行状态管理 💡 性能优化技巧 🚀 在 React 中使用路由 🔨 React 中的测试策略 🎯 实际项目：构建一个 React 应用 👨‍💻  </description>
+    </item>
+    
+    <item>
       <title>Flink JobManager 新版</title>
       <link>https://www.kohaku.ink/Flink-JobManager-%E6%96%B0%E7%89%88/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
