@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="目录  📚理解什么是 Flink 和 JobManager：包括 Flink 的核心概念，以及 JobManager 的功能和角色。 💡深入研究 Flink JobManager 的架构：包括它的组件以及它们如何交互。 🚀通过实例来学习如何配置和使用 JobManager：包括设置参数，提交作业，以及监控作业的状态。 💡学习 Flink JobManager 的故障恢复策略：了解如何处理 JobManager 的故障，以及如何优化其性能。 🚀动手实践：配置一个具有高可用性的 Flink JobManager，并对其进行性能优化。  概念 Flink 是一款开源的流处理框架，由 Apache Software Foundation 托管。📚它的核心设计思想是“批处理是流处理的一种特殊情况”，因此它提供了统一的流处理和批处理解决方案。"
+  />
+  <title>
+    Flink JobManager 新版
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://www.kohaku.ink//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <link href="https://www.kohaku.ink/styles.2e199a69b46898aa8b90d14c0bafdfc1.min.css" rel="stylesheet" />
+
+  
+  <link href="https://www.kohaku.ink/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://www.kohaku.ink/js/darkmode.cabeeda231398f647f1a6a778f82b25a.min.js"></script>
+  
+  
+  
+  <script src="https://www.kohaku.ink/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  
+  
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+
+  
+  
+
+
+
+  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script async src="https://www.kohaku.ink/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+
+  
+  
+  
+  <script defer src="https://www.kohaku.ink/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
+  
+
+  
+  
+  <script defer src="https://www.kohaku.ink/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
+  
+
+  
+  
+  <script defer src="https://www.kohaku.ink/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js"></script>
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED =  false 
+    const LATEX_ENABLED =  true 
+    const PRODUCTION =  true 
+    const BASE_URL = "https://www.kohaku.ink/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.0fe71f09920943247922c81560b3a17c.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4cfaf54ca5abb505c8ea09f89445ab89.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      addCollapsibleCallouts();
+      
+
+      
+      initPopover(
+        "https://www.kohaku.ink",
+         true 
+
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://www.kohaku.ink",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":1,"opacityScale":3,"repelForce":2,"scale":1.2}
+          );
+
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
+        }
+      
+      
+      
+      function clickHandler(evt) {
+        const target = evt.target 
+        const classNames = target.className.split(" ")
+        const broken = classNames.includes("broken")
+        const internal = classNames.includes("internal-link")
+        plausible("Link Click", {
+          props: {
+            href: target.href,
+            broken,
+            internal,
+            graph: false,
+          }
+        })
+      }
+
+      const links = document.querySelectorAll("a")
+      for (link of links) {
+        if (link.className.includes("root-title")) {
+          link.addEventListener('click', clickHandler, {once: true})
+        }
+      }
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/www.kohaku.ink\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+  
+  <script defer data-domain="www.kohaku.ink" src="https://plausible.io/js/script.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://www.kohaku.ink/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a class="root-title" href="https://www.kohaku.ink/">Kohaku</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Flink JobManager 新版</h1>
+      <p class="meta">
+        Last updated 
+May 26, 2023
+
+ 
+          
+
+      </p>
+      <ul class="tags">
+    
+</ul>
+
+      
+
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#目录">目录</a></li>
+        <li><a href="#概念">概念</a></li>
+        <li><a href="#内部组件和交互">内部组件和交互</a></li>
+        <li><a href="#taskmanager">TaskManager</a></li>
+        <li><a href="#配置-jobmanager-参数">配置 JobManager 参数</a></li>
+        <li><a href="#jobmanager-的故障恢复策略">JobManager 的故障恢复策略</a></li>
+        <li><a href="#性能优化">性能优化</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+<a href="#目录"><h3 id="目录"><span class="hanchor" ariaLabel="Anchor"># </span>目录</h3></a>
+<ol>
+<li>📚理解什么是 Flink 和 JobManager：包括 Flink 的核心概念，以及 JobManager 的功能和角色。</li>
+<li>💡深入研究 Flink JobManager 的架构：包括它的组件以及它们如何交互。</li>
+<li>🚀通过实例来学习如何配置和使用 JobManager：包括设置参数，提交作业，以及监控作业的状态。</li>
+<li>💡学习 Flink JobManager 的故障恢复策略：了解如何处理 JobManager 的故障，以及如何优化其性能。</li>
+<li>🚀动手实践：配置一个具有高可用性的 Flink JobManager，并对其进行性能优化。</li>
+</ol>
+<a href="#概念"><h3 id="概念"><span class="hanchor" ariaLabel="Anchor"># </span>概念</h3></a>
+<p>Flink 是一款开源的流处理框架，由 Apache Software Foundation 托管。📚它的核心设计思想是“批处理是流处理的一种特殊情况”，因此它提供了统一的流处理和批处理解决方案。</p>
+<p>Flink 中的 JobManager 是一个非常重要的组件。💡你可以将其视为 Flink 作业的大脑。它负责接收提交的作业，调度和协调作业的执行，并在作业完成后收集结果。</p>
+<p>这是一个 JobManager 在 Flink 作业中的角色的简单示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">ExecutionEnvironment</span> <span class="n">env</span> <span class="o">=</span> <span class="n">ExecutionEnvironment</span><span class="o">.</span><span class="na">getExecutionEnvironment</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">DataSet</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="na">readTextFile</span><span class="o">(</span><span class="s">&#34;/path/to/file&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Some transformations on the DataSet...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">text</span><span class="o">.</span><span class="na">writeAsText</span><span class="o">(</span><span class="s">&#34;/path/to/output&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">env</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="s">&#34;My Flink Job&#34;</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在这段代码中，<code>env.execute(&quot;My Flink Job&quot;)</code> 将作业提交给了 JobManager，然后 JobManager 负责调度和执行这个作业。</p>
+<p><strong>问题</strong></p>
+<ol>
+<li>请解释一下 Flink 是什么以及它的主要特性是什么？</li>
+<li>在 Flink 中，JobManager 扮演了什么角色？</li>
+<li>请解释一下 <code>env.execute()</code> 在 Flink 程序中的作用？</li>
+</ol>
+<p><strong>回答</strong></p>
+<ol>
+<li>Flink 是一款开源的流处理框架，它的核心设计思想是“批处理是流处理的一种特殊情况”，因此它提供了统一的流处理和批处理解决方案。</li>
+<li>Flink 中的 JobManager 是一个非常重要的组件，可以将其视为 Flink 作业的大脑。它负责接收提交的作业，调度和协调作业的执行，并在作业完成后收集结果。</li>
+<li><code>env.execute()</code> 是一个触发操作，会启动并执行所有先前定义的转换操作，并在作业完成后将结果提交给 JobManager。一旦调用了 <code>env.execute()</code>，那么你的 Flink 程序就已经定义完毕，并开始执行。</li>
+</ol>
+<a href="#内部组件和交互"><h3 id="内部组件和交互"><span class="hanchor" ariaLabel="Anchor"># </span>内部组件和交互</h3></a>
+<p>Flink JobManager 由几个主要组件组成：🔧</p>
+<ol>
+<li><strong>Scheduler</strong>：负责在 TaskManager 上调度任务的执行。</li>
+<li><strong>Checkpoint Coordinator</strong>：负责协调作业的检查点操作。</li>
+<li><strong>Blob Store</strong>：用于存储作业的 JAR 文件和其他 BLOB 数据。</li>
+</ol>
+<p>这些组件的交互可以使 JobManager 有效地协调 Flink 作业的执行。🔄
+例如，当一个作业被提交到 JobManager 时，Scheduler 会分析作业的依赖关系，并决定任务的执行顺序。然后，它会将任务调度到可用的 TaskManager 上执行。在执行过程中，Checkpoint Coordinator 会定期触发检查点操作，以确保作业在发生故障时可以从最近的检查点恢复。</p>
+<p>Scheduler 是 Flink JobManager 中的一个关键组件，负责管理作业的执行。它维护了作业的执行图，根据任务之间的依赖关系，决定任务的执行顺序。这意味着，如果你能有效地管理作业的依赖关系，可以优化任务的执行顺序，从而提高作业的执行效率。</p>
+<p>Checkpoint Coordinator 负责协调作业的检查点操作。它定期触发检查点，将作业的状态保存到持久性存储中。这意味着，通过合理地设置检查点间隔，可以在保证作业可恢复性的同时，尽量减少检查点操作对作业性能的影响。</p>
+<p>Blob Store 负责存储和分发作业的 JAR 文件和其他大对象（BLOB）数据。通过有效地使用 Blob Store，你可以确保所有的 TaskManager 都能获取到作业的代码和数据，从而提高作业的执行效率。
+<strong>问题</strong></p>
+<ol>
+<li>描述一下 Flink JobManager 的主要组件及其功能。</li>
+<li>请解释在 Flink JobManager 中，Scheduler、Checkpoint Coordinator 和 Blob Store 之间的交互关系。</li>
+<li>当一个作业被提交到 Flink JobManager 时，这个作业的执行过程是怎样的？</li>
+</ol>
+<p><strong>回答</strong></p>
+<ol>
+<li>主要组件由 Scheduler、Checkpoint Coordinator、Blob Store 组成，Scheduler 的功能是在 Task Manager 负责调度任务的执行，Checkpoint Coordinator 负责协调作业的检查点操作，Blob Store 负责存储作业的 JAR 文件和其他 BLOB 数据</li>
+<li>当一个作业被提交到 JobManager 时，Scheduler 会分析作业的依赖关系并决定任务的执行顺序，然后，它会将任务调度到可用的 TaskManager 上执行。在执行过程中，Checkpoint Coordinator 会定期触发检查点操作，以确保作业在发生故障时可以从最近的检查点恢复。同时，Blob Store 会存储和分发作业的 JAR 文件，以确保所有的 TaskManager 都能获取到作业的代码。</li>
+<li>当一个作业被提交到 JobManager 时，Scheduler 会分析作业的依赖关系并决定任务的执行顺序，然后，它会将任务调度到可用的 TaskManager 上执行。在执行过程中，Checkpoint Coordinator 会定期触发检查点操作，以确保作业在发生故障时可以从最近的检查点恢复。同时，Blob Store 会存储和分发作业的 JAR 文件，以确保所有的 TaskManager 都能获取到作业的代码。</li>
+</ol>
+<a href="#taskmanager"><h3 id="taskmanager"><span class="hanchor" ariaLabel="Anchor"># </span>TaskManager</h3></a>
+<p>在 Flink 架构中，TaskManager 是执行具体任务的工作节点。每一个 TaskManager 都有一定数量的任务槽（Task Slot），这些任务槽用于并行执行任务。
+<strong>TaskManager 的主要职责如下：</strong></p>
+<ol>
+<li>执行作业的具体任务</li>
+<li>管理本地的资源</li>
+<li>管理和维护状态和检查点</li>
+<li>与 JobManager 和其他 TaskManager 通信</li>
+</ol>
+<a href="#配置-jobmanager-参数"><h3 id="配置-jobmanager-参数"><span class="hanchor" ariaLabel="Anchor"># </span>配置 JobManager 参数</h3></a>
+<p>Flink 提供了一个配置文件 <code>flink-conf.yaml</code>，可以在这个文件中设置各种参数，比如 JobManager 的内存大小，checkpoint 的间隔，等等。下面是一个示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># jobmanager 堆大小</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobmanager.heap.size</span><span class="p">:</span><span class="w"> </span><span class="l">1024m</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># taskmanager 堆大小</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">taskmanager.heap.size</span><span class="p">:</span><span class="w"> </span><span class="l">4096m</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 每个 taskmanager 的任务槽数量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">taskmanager.numberOfTaskSlots</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 默认并行度</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">parallelism.default</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>无需在主程序中手动读取 Flink 的配置。Flink 的配置由 Flink 运行时系统自动加载和处理。当提交作业时，Flink 的运行时系统会从默认的或者你指定的配置文件（例如：<code>flink-conf.yaml</code>）中读取配置信息。这些配置信息被读入到环境配置（Execution Environment）中，并被用来配置 JobManager，TaskManager，以及其他系统组件。
+例如，你可以这样获取默认的并行度：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">StreamExecutionEnvironment</span> <span class="n">env</span> <span class="o">=</span> <span class="n">StreamExecutionEnvironment</span><span class="o">.</span><span class="na">getExecutionEnvironment</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">parallelism</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="na">getParallelism</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#jobmanager-的故障恢复策略"><h3 id="jobmanager-的故障恢复策略"><span class="hanchor" ariaLabel="Anchor"># </span>JobManager 的故障恢复策略</h3></a>
+<p>Flink 的 JobManager 具有高可用性。这是通过一个称为 ZooKeeper 的分布式协调服务实现的。如果 JobManager 发生故障，Flink 可以自动选择一个新的 JobManager。这个过程是通过 ZooKeeper 中的领导者选举算法来完成的。
+Flink 的作业在运行期间会周期性地在分布式存储系统中保存 checkpoint。当 JobManager 发生故障并被新的 JobManager 替换后，新的 JobManager 可以从最近的 checkpoint 中恢复作业的状态，并继续执行作业。</p>
+<a href="#性能优化"><h3 id="性能优化"><span class="hanchor" ariaLabel="Anchor"># </span>性能优化</h3></a>
+<p>优化 JobManager 的性能，可以通过一些配置来实现：</p>
+<ol>
+<li>增加 JobManager 的内存</li>
+<li>增加 JobManager JVM 堆大小</li>
+<li>调整 Checkpoint 的频率</li>
+<li>使用更好的硬件</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 配置 JobManager 的 JVM 堆内存大小</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobmanager.heap.size</span><span class="p">:</span><span class="w"> </span><span class="l">1024m</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 配置 JobManager 进程的总内存大小，包括了 JVM 堆内存、JVM 堆外内存，以及其他 JVM 进程需要的内存</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobmanager.memory.process.size</span><span class="p">:</span><span class="w"> </span><span class="l">1024m</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 配置 checkpoint 的间隔时间，单位为毫秒</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">execution.checkpointing.interval</span><span class="p">:</span><span class="w"> </span><span class="m">10000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 配置 checkpoint 的超时时间，单位为毫秒</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">execution.checkpointing.timeout</span><span class="p">:</span><span class="w"> </span><span class="m">60000</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://www.kohaku.ink/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p></p>
+        <ul>
+            
+            <li><a href="https://www.kohaku.ink/">Home</a></li>
+            </ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

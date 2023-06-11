@@ -10,7 +10,7 @@
     name="description"
     content="[!NOTE] Daily Quote
  In all things of nature there is something of the marvelous. — Aristotle
-   [[python 虚拟环境]]"
+   [[Programming/python 虚拟环境]]"
   />
   <title>
     2023-05-05
@@ -142,13 +142,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.fac28310ae1be8b50091196323efd3fa.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.0fe71f09920943247922c81560b3a17c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.bbb08f2b67fad937abf58ef83c2e2a30.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4cfaf54ca5abb505c8ea09f89445ab89.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -467,7 +467,7 @@ May 5, 2023
 
 <img src="https://images.unsplash.com/photo-1525230071276-4a87f42f469e?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=MnwzNjM5Nzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODMyMTc3NzE&amp;ixlib=rb-4.0.3&amp;q=85" width="auto" alt="photo by Agathe on Unsplash"  /></p>
 </blockquote>
-<p><a href="/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83" rel="noopener" class="internal-link" data-src="/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">python 虚拟环境</a></p>
+<p><a href="/Programming/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83" rel="noopener" class="internal-link" data-src="/Programming/python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">python 虚拟环境</a></p>
 <a href="#工作"><h3 id="工作"><span class="hanchor" ariaLabel="Anchor"># </span>工作</h3></a>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 修复财资云一批次提的 BUG</li>

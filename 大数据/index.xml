@@ -6,7 +6,16 @@
     <description>Recent content in 大数据s on Kohaku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flink JobManager 新版</title>
+      <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-JobManager-%E6%96%B0%E7%89%88/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/Flink-JobManager-%E6%96%B0%E7%89%88/</guid>
+      <description>目录  📚理解什么是 Flink 和 JobManager：包括 Flink 的核心概念，以及 JobManager 的功能和角色。 💡深入研究 Flink JobManager 的架构：包括它的组件以及它们如何交互。 🚀通过实例来学习如何配置和使用 JobManager：包括设置参数，提交作业，以及监控作业的状态。 💡学习 Flink JobManager 的故障恢复策略：了解如何处理 JobManager 的故障，以及如何优化其性能。 🚀动手实践：配置一个具有高可用性的 Flink JobManager，并对其进行性能优化。  概念 Flink 是一款开源的流处理框架，由 Apache Software Foundation 托管。📚它的核心设计思想是“批处理是流处理的一种特殊情况”，因此它提供了统一的流处理和批处理解决方案。</description>
+    </item>
+    
     <item>
       <title>转行数据理由</title>
       <link>https://www.kohaku.ink/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E8%BD%AC%E8%A1%8C%E6%95%B0%E6%8D%AE%E7%90%86%E7%94%B1/</link>

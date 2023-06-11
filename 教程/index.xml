@@ -81,14 +81,5 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
  readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &amp;ldquo;UTF-8&amp;rdquo;。 readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。 readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。  FileReader 对象还包含了一些事件，例如：</description>
     </item>
     
-    <item>
-      <title>obsidian本地内容同步到数字花园</title>
-      <link>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/</link>
-      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/</guid>
-      <description>准备工作  首先 fork 两个模板项目作为参考  </description>
-    </item>
-    
   </channel>
 </rss>

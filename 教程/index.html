@@ -140,13 +140,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.fac28310ae1be8b50091196323efd3fa.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.0fe71f09920943247922c81560b3a17c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.bbb08f2b67fad937abf58ef83c2e2a30.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4cfaf54ca5abb505c8ea09f89445ab89.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,24 +434,6 @@ Apr 10, 2023
             </div>
             <div class="spacer"></div>
             <ul class="tags">
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 4, 2023
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://www.kohaku.ink/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/" class="internal-link" data-src="/%E6%95%99%E7%A8%8B/obsidian%E6%9C%AC%E5%9C%B0%E5%86%85%E5%AE%B9%E5%90%8C%E6%AD%A5%E5%88%B0%E6%95%B0%E5%AD%97%E8%8A%B1%E5%9B%AD/">obsidian本地内容同步到数字花园</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://www.kohaku.ink/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
                 
             </ul>
         </div>
