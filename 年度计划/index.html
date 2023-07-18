@@ -145,13 +145,13 @@ Typora 祝自己新年快乐！新的一年不一定会有新的气象，但是�
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.9845d8a2485bea6e266549e9fe0432be.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.3cca4d2e08efdd3ea1783b4730cef12d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.372a94212bb8f9546930b1e8b353e6c5.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4ef48d373b12453e0f803fa9a956e1f0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
