@@ -140,13 +140,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.3cca4d2e08efdd3ea1783b4730cef12d.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.ca634b3b7ff5bc38d566477dd433c0cb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4ef48d373b12453e0f803fa9a956e1f0.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.8efc9ff397fb7a666c6f7e658fafa91e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -404,7 +404,7 @@ May 17, 2023
       
       
       <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-05-17/" data-ctx="工作结束后的常态" data-src="/%E6%AF%8F%E6%97%A5/2023-05-17" class="internal-link">2023-05-17</a>
+        <a href="/%E6%AF%8F%E6%97%A5/2023-05-17/" data-ctx="数字游民/工作/工作结束后的常态" data-src="/%E6%AF%8F%E6%97%A5/2023-05-17" class="internal-link">2023-05-17</a>
       </li>
       
       

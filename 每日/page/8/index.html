@@ -140,13 +140,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://www.kohaku.ink/"
     const fetchData = Promise.all([
-          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.3cca4d2e08efdd3ea1783b4730cef12d.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/linkIndex.ca634b3b7ff5bc38d566477dd433c0cb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.4ef48d373b12453e0f803fa9a956e1f0.min.json")
+          fetch("https:\/\/www.kohaku.ink\/indices\/contentIndex.8efc9ff397fb7a666c6f7e658fafa91e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -326,6 +326,38 @@
         <h1>All 每日s</h1>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 10, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-10/" class="internal-link" data-src="/%E6%AF%8F%E6%97%A5/2023-04-10/">2023-04-10</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 9, 2023
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://www.kohaku.ink/%E6%AF%8F%E6%97%A5/2023-04-09/" class="internal-link" data-src="/%E6%AF%8F%E6%97%A5/2023-04-09/">2023-04-09</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
