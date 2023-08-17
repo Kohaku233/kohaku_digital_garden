@@ -8,12 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="FileReader 对象用于读取用户在浏览器中选择的文件。这在处理文件上传、读取文件内容以显示在页面上或解析文件数据时非常有用。
-FileReader 对象包含了一系列方法和事件，让你能够以不同的方式读取文件数据，例如：
- readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &ldquo;UTF-8&rdquo;。 readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。 readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。  FileReader 对象还包含了一些事件，例如："
+    content=" 年度目标
+ 体重降低到150斤附近 通过交易和跟单将今年新投入资金的损失弥补回来 满足自己爱好的前提下探索可能赚钱的副业，给自己多带来一份被动收入的可能性 从零构建一款自己的产品，目前暂定为个人网站，包含前台博客和作品集以及后台管理页面  计划安排
+ 外面的餐食无法控油或者热量，很多时候一不小心就会吃出超出今日需要摄入的热量，这样一来减脂的效果也就会大打折扣，如何在做饭和外面吃之间平衡是一件很值得深思的问题，因为午休的时间没那么多想要吃到比较好吃且健康的食品还是比较困难的 开始给自己安排扩展专业的学习了例如计算机网络相关的部分，拓宽自己的技能范围 先把自己工作内容做完再来考虑扩展自己能力的边界  "
   />
   <title>
-    网页上传原理
+    2023-08-17
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -325,10 +325,10 @@ FileReader 对象包含了一系列方法和事件，让你能够以不同的方
 
 
     <article>
-      <h1>网页上传原理</h1>
+      <h1>2023-08-17</h1>
       <p class="meta">
         Last updated 
-Apr 10, 2023
+Aug 17, 2023
 
  
           
@@ -340,21 +340,6 @@ Apr 10, 2023
 
       
 
-<aside class="mainTOC">
-    <details >
-        <summary>Table of Contents</summary>
-        <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#示例代码">示例代码</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-    </details>
-</aside>
-
 
       
 
@@ -394,75 +379,22 @@ Apr 10, 2023
 
 
 
-<p><strong>FileReader</strong> 对象用于读取用户在浏览器中选择的文件。这在处理文件上传、读取文件内容以显示在页面上或解析文件数据时非常有用。</p>
-<p>FileReader 对象包含了一系列方法和事件，让你能够以不同的方式读取文件数据，例如：</p>
+<p>
+
+<img src="https://images.unsplash.com/photo-1625189659340-887baac3ea32?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3wzNjM5Nzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTIyMDM2NzV8&amp;ixlib=rb-4.0.3&amp;q=85" width="auto" alt="photo by Susann Schuster on Unsplash"  /></p>
+<p><strong>年度目标</strong></p>
 <ol>
-<li>readAsText(file, encoding): 以文本形式读取文件内容，可以指定编码方式，通常是 &ldquo;UTF-8&rdquo;。</li>
-<li>readAsDataURL(file): 读取文件内容并将其转换为 base64 编码的 data URL，这在显示图片或其他媒体文件时非常有用。</li>
-<li>readAsArrayBuffer(file): 以 ArrayBuffer 形式读取文件内容，这在处理二进制数据时非常有用，比如图像、音频或视频文件。</li>
+<li>体重降低到150斤附近</li>
+<li>通过交易和跟单将今年新投入资金的损失弥补回来</li>
+<li>满足自己爱好的前提下探索可能赚钱的副业，给自己多带来一份被动收入的可能性</li>
+<li>从零构建一款自己的产品，目前暂定为个人网站，包含前台博客和作品集以及后台管理页面</li>
 </ol>
-<p>FileReader 对象还包含了一些事件，例如：</p>
+<p><strong>计划安排</strong></p>
 <ol>
-<li>onload: 当文件读取操作成功完成时触发。</li>
-<li>onerror: 当文件读取操作失败时触发。</li>
-<li>onprogress: 当文件读取操作正在进行时触发。</li>
+<li>外面的餐食无法控油或者热量，很多时候一不小心就会吃出超出今日需要摄入的热量，这样一来减脂的效果也就会大打折扣，如何在做饭和外面吃之间平衡是一件很值得深思的问题，因为午休的时间没那么多想要吃到比较好吃且健康的食品还是比较困难的</li>
+<li>开始给自己安排扩展专业的学习了例如计算机网络相关的部分，拓宽自己的技能范围</li>
+<li>先把自己工作内容做完再来考虑扩展自己能力的边界</li>
 </ol>
-<a href="#示例代码"><h3 id="示例代码"><span class="hanchor" ariaLabel="Anchor"># </span>示例代码</h3></a>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputImage&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;displayImage&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Selected image&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">inputImage</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;inputImage&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">displayImage</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;displayImage&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">inputImage</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// 获取用户选择的第一个文件
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nx">file</span> <span class="o">&amp;&amp;</span> <span class="nx">file</span><span class="p">.</span><span class="nx">type</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;image/&#39;</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// 确保文件是图像
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FileReader</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 当读取操作成功完成时，将图片的data URL设置为&lt;img&gt;标签的src属性
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">reader</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nx">displayImage</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 使用readAsDataURL方法读取图像文件
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">reader</span><span class="p">.</span><span class="nx">readAsDataURL</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Please select a valid image file.&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">});</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><code>reader.readAsDataURL(file)</code>是必不可少的。实际上，<code>e.target.result</code>中的base64编码的图片数据是在<code>reader.readAsDataURL(file)</code>执行后得到的。<code>readAsDataURL()</code>方法是<code>FileReader</code>对象用来读取文件内容并将其转换为base64编码的DataURL的函数。当这个方法被调用时，FileReader对象会开始读取指定的文件并在完成时触发<code>onload</code>事件。</p>
 
 
     </article>
@@ -480,20 +412,10 @@ Apr 10, 2023
     
     
     
+    <li>
+      No backlinks found
+    </li>
     
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/%E6%AF%8F%E6%97%A5/2023-04-10/" data-ctx="教程/网页上传原理" data-src="/%E6%AF%8F%E6%97%A5/2023-04-10" class="internal-link">2023-04-10</a>
-      </li>
-      
-      
-      
 </ul>
 
     </div>
